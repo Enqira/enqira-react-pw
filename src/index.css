@@ -9,3 +9,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.card {
+  width: 50rem;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 20%), 0 0 30px rgb(0 0 0 / 20%);
+  padding: 2rem 5rem 1rem 5rem;
+}
+
+h2 {
+  opacity: 0.9;
+}
+h3 {
+  color: #5a4d4d;
+  font-size: 20px;
+  letter-spacing: 0.03rem;
+  font-weight: 400;
+}
