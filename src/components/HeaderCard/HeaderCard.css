@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 20%), 0 0 30px rgb(0 0 0 / 20%);
   padding: 2rem 5rem 1rem 5rem;
 }
 .header-circle {
@@ -55,11 +55,6 @@
 }
 .header-info h3 {
   transition: all 0.3s ease-out;
-  color: #5a4d4d;
-  font-size: 20px;
-  letter-spacing: 0.03rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
 }
 .header-info {
   padding: 1rem;
