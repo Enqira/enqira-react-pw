@@ -6,8 +6,6 @@ import linkedinLogo from "../../images/linkedin-logo.png"
 import emailLogo from "../../images/email-logo.png"
 
 export default function HeaderCard() {
-  //   const [xAxes, setXAxes] = useState(null)
-  //   const [yAxes, setYAxes] = useState(null)
   const [cardStyle, setCardStyle] = useState()
   const containerRef = useRef()
   const picBackRef = useRef()
@@ -30,8 +28,6 @@ export default function HeaderCard() {
     containerRef.current.addEventListener("mouseenter", e => {
       picRef.current.style.transform =
         "scaleX(0.9) scaleY(0.9) translateZ(50px)"
-      //   titleRef.current.style.boxShadow =
-      //     "0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2)"
       titleRef.current.style.transform = "translateZ(200px)"
       descriptionRef.current.style.transform = "translateZ(80px)"
       btnRef.current.style.transform = "translateZ(100px)"
@@ -46,9 +42,7 @@ export default function HeaderCard() {
         transform: `rotateX(0deg) rotateY(0deg)`,
         transition: "all 0.5s ease"
       })
-      //   picRef.current.style.transform = "translateZ(1px)"
       picRef.current.style.transform = "scaleX(0.8) scaleY(0.8) translateZ(0px)"
-      //   titleRef.current.style.boxShadow = "none"
 
       titleRef.current.style.transform = "translateZ(0px)"
       descriptionRef.current.style.transform = "translateZ(0px)"
