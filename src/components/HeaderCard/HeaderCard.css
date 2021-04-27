@@ -1,0 +1,83 @@
+.header-container {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  max-width: 1000px;
+  perspective: 1000px;
+}
+.header-card {
+  transform-style: preserve-3d;
+  transition: all 0.1s ease;
+  height: 400px;
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+  padding: 0 5rem;
+}
+.header-circle {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+.header-img-container {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img {
+  max-width: 12rem;
+  z-index: 2;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0.8) scaleX(0.8);
+}
+.header-info {
+  text-align: center;
+}
+.header-info h1 {
+  transition: all 0.3s ease-out;
+  font-size: 26px;
+  margin: 0;
+}
+.header-info h3 {
+  font-size: 20px;
+  transition: all 0.3s ease-out;
+}
+.header-info {
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: #585858;
+  font-weight: lighter;
+}
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-out;
+}
+.header-links button {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+.header-links button.active {
+  background: #585858;
+  color: white;
+}
