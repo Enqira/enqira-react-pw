@@ -1,29 +1,23 @@
 .header-container {
-  margin: auto;
+  margin: 10px auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
-  max-width: 1200px;
+  max-width: 1000px;
   perspective: 1000px;
 }
 .header-card {
   transform-style: preserve-3d;
   transition: all 0.1s ease;
-  height: 400px;
-  width: 50rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 20%), 0 0 30px rgb(0 0 0 / 20%);
-  padding: 2rem 5rem 1rem 5rem;
 }
 .header-circle {
   width: 160px;
   height: 160px;
   background: #5879b3ce;
-
   position: absolute;
   border-radius: 50%;
   z-index: 1;
@@ -55,6 +49,7 @@
 }
 .header-info h3 {
   transition: all 0.3s ease-out;
+  font-family: "Roboto mono", "Roboto", sans-serif;
 }
 .header-info {
   padding: 1rem;

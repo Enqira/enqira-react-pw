@@ -59,7 +59,7 @@ export default function HeaderCard() {
 
   return (
     <div className="header-container" ref={containerRef}>
-      <div className="header-card" style={cardStyle}>
+      <div className="header-card card" style={cardStyle}>
         <div className="header-img-container">
           <div className="header-circle" ref={picBackRef}></div>
           <img
