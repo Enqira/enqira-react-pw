@@ -30,7 +30,7 @@ const arr = [
     ],
     repository: "https://github.com/Enqira/meal-sharing",
     repository2: "https://github.com/Enqira/meal-sharing",
-    website: "https://cp.enqira.com/"
+    website: "http://cp.enqira.com/"
   }
 ]
 
