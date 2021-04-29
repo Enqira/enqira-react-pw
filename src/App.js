@@ -4,6 +4,7 @@ import SummaryComponent from "./components/SummaryComponent/SummaryComponent"
 import SkillsComponent from "./components/SkillsComponent/SkillsComponent"
 import ProjectsComponent from "./components/ProjectsComponent/ProjectsComponent"
 import CoursesComponent from "./components/Courses/CoursesComponent"
+import OthersComponent from "./components/Others/OthersComponent"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SkillsComponent />
       <ProjectsComponent />
       <CoursesComponent />
+      <OthersComponent />
     </div>
   )
 }
