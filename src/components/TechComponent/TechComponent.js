@@ -18,6 +18,12 @@ import gitLogo from "../../images/git-logo.png"
 import adobeLogo from "../../images/others/adobe.png"
 import repositoryLogo from "../../images/repository.png"
 import linkLogo from "../../images/link.png"
+import spanishLogo from "../../images/flags/spanish.png"
+import frenchLogo from "../../images/flags/french.png"
+import arabicLogo from "../../images/flags/arabic.png"
+import danishLogo from "../../images/flags/danish.png"
+import englishLogo from "../../images/flags/english.png"
+import catalanLogo from "../../images/flags/catalan.png"
 
 const data = [
   { name: "ReactJS", path: reactLogo },
@@ -96,6 +102,30 @@ const data = [
   {
     name: "See certificate",
     path: linkLogo
+  },
+  {
+    name: "Spanish",
+    path: spanishLogo
+  },
+  {
+    name: "French",
+    path: frenchLogo
+  },
+  {
+    name: "English",
+    path: englishLogo
+  },
+  {
+    name: "Arabic",
+    path: arabicLogo
+  },
+  {
+    name: "Catalan",
+    path: catalanLogo
+  },
+  {
+    name: "Danish",
+    path: danishLogo
   }
 ]
 
