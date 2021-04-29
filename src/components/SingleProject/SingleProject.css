@@ -1,0 +1,21 @@
+.single-project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -20px 0 25px 0;
+}
+.project-build-with {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.project-build-with h4 {
+  margin: 0.5rem 0;
+}
+.projectImg {
+  width: 50%;
+}
+.rep-web-links-container {
+  display: flex;
+  font-size: 13px;
+}

@@ -73,10 +73,10 @@ export default function HeaderCard() {
           <h1 className="header-title" ref={titleRef}>
             MOHAMMED ENQIRA
           </h1>
-          <h3 ref={descriptionRef}>
+          <p ref={descriptionRef}>
             Very motivated, hard worker and fast learner Full stack developer
             with a strong will to solve real world problems and build projects.{" "}
-          </h3>
+          </p>
           <div className="header-links" ref={btnRef}>
             <img src={githubLogo} alt="github" />
             <img src={linkedinLogo} alt="linkedin" />

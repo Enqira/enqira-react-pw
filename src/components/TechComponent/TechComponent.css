@@ -1,0 +1,15 @@
+.tech-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tech-item-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.techs-img {
+  width: 25px;
+  margin: 0 5px 4px 0;
+}
