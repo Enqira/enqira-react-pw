@@ -3,7 +3,20 @@ import "./SingleProject.css"
 import TechComponent from "../TechComponent/TechComponent"
 
 export default function SingleProject({ project }) {
-  const { name, description, skills, image, repository, website } = project
+  const {
+    name,
+    description,
+    skills,
+    image,
+    repository,
+    website,
+    repository2
+  } = project
+  const secondRep = repository2 ? (
+    <TechComponent arr={["App repository"]} />
+  ) : (
+    <div></div>
+  )
   return (
     <div className="single-project-container">
       <h3>{name}</h3>
@@ -15,6 +28,9 @@ export default function SingleProject({ project }) {
       <div className="rep-web-links-container">
         <a href={repository} target="_blank" rel="noreferrer">
           <TechComponent arr={["repository"]} />
+        </a>
+        <a href={repository2} target="_blank" rel="noreferrer">
+          {secondRep}
         </a>
         <a href={website} target="_blank" rel="noreferrer">
           <TechComponent arr={["website"]} />

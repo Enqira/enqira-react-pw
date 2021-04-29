@@ -10,7 +10,7 @@ const arr = [
     image: invitaImg,
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
-    skills: ["ReactJS", "Javascript", "MySQL", "HTML", "CSS"],
+    skills: ["MySQL", "express", "ReactJS", "NodeJS"],
     repository: "https://github.com/Enqira/meal-sharing",
     website: "https://invita.herokuapp.com/"
   },
@@ -19,9 +19,18 @@ const arr = [
     image: invitaImg,
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
-    skills: ["NodeJS", "mongoDB", "Cordova Ionic", "HTML", "CSS", "Javascript"],
+    skills: [
+      "mongoDB",
+      "express",
+      "Cordova Ionic",
+      "NodeJS",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
     repository: "https://github.com/Enqira/meal-sharing",
-    website: "https://invita.herokuapp.com/"
+    repository2: "https://github.com/Enqira/meal-sharing",
+    website: "https://cp.enqira.com/"
   }
 ]
 

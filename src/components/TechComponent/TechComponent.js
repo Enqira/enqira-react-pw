@@ -11,6 +11,7 @@ import nodeLogo from "../../images/backend/node.png"
 import mysqlLogo from "../../images/backend/mysql.png"
 import mongoDBLogo from "../../images/backend/mongodb.png"
 import dockerLogo from "../../images/backend/docker.png"
+import expressLogo from "../../images/backend/express.png"
 import elasticLogo from "../../images/others/elasticsearch.png"
 import firgmaLogo from "../../images/others/figma.png"
 import gitLogo from "../../images/git-logo.png"
@@ -79,6 +80,22 @@ const data = [
   {
     name: "repository",
     path: repositoryLogo
+  },
+  {
+    name: "App repository",
+    path: repositoryLogo
+  },
+  {
+    name: "express",
+    path: expressLogo
+  },
+  {
+    name: "HackYourFuture.dk",
+    path: linkLogo
+  },
+  {
+    name: "See certificate",
+    path: linkLogo
   }
 ]
 
