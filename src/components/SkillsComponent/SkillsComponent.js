@@ -17,7 +17,7 @@ const arr = [
   },
   {
     group: "Back-end",
-    skills: ["NodeJS", "MySQL", "mongoDB", "elasticsearch", "Docker"]
+    skills: ["MySQL", "mongoDB", "express", "NodeJS", "elasticsearch", "Docker"]
   },
   {
     group: "Others",
