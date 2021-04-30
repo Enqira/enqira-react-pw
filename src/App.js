@@ -8,7 +8,7 @@ import OthersComponent from "./components/Others/OthersComponent"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App slide-top">
       <HeaderCard />
       <SummaryComponent />
       <SkillsComponent />
