@@ -17,7 +17,10 @@ function App() {
         setContactStyle={setContactStyle}
         contactStyle={contactStyle}
       />
-      <ContactContainer contactStyle={contactStyle} />
+      <ContactContainer
+        contactStyle={contactStyle}
+        setContactStyle={setContactStyle}
+      />
       <SummaryComponent />
       <SkillsComponent />
       <ProjectsComponent />

@@ -1,13 +1,17 @@
 .contact-container {
   display: flex;
   justify-content: center;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  transition: all ease;
+  transition-duration: 2s;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 15px;
+  /* transition: all ease;
+  transition-duration: 2s;
+  transition-delay: 1s; */
 }
 .contact-form div {
   margin: 10px 0;
@@ -30,12 +34,14 @@ textarea {
 }
 input.submit-btn {
   width: 120px;
-  height: 30px;
+  height: 35px;
+  margin: 5px;
   align-self: center;
   border-style: none;
   background: #5879b3ce;
   color: white;
   font-family: "Roboto mono", "Roboto", sans-serif;
+  font-size: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 input.submit-btn:hover {
@@ -47,6 +53,18 @@ input.submit-btn:hover {
     both;
   animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
+.alert {
+  position: absolute;
+  top: 45%;
+  transition: 1s;
+  transition-delay: 0.5s;
+  text-align: center;
+}
+/* Button partics */
+/* .styles_particles__5dxGv {
+  display: flex;
+  justify-content: center;
+} */
 
 @-webkit-keyframes scale-up-ver-top {
   0% {

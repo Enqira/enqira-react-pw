@@ -5,7 +5,11 @@ import githubLogo from "../../images/git-logo.png"
 import linkedinLogo from "../../images/linkedin-logo.png"
 import emailLogo from "../../images/email-logo.png"
 
-export default function HeaderCard({ setContactStyle, contactStyle }) {
+export default function HeaderCard({
+  setContactStyle,
+  contactStyle,
+  setEffectState
+}) {
   const [cardStyle, setCardStyle] = useState()
   const containerRef = useRef()
   const picBackRef = useRef()
@@ -15,13 +19,7 @@ export default function HeaderCard({ setContactStyle, contactStyle }) {
   const picRef = useRef()
 
   const handleContactClick = () => {
-    // if ((contactRef.current.style.display = "none")) {
-    //   contactRef.current.style.display = "flex"
-    // } else {
-    //   contactRef.current.style.display = "none"
-    // }
     contactStyle === "none" ? setContactStyle("flex") : setContactStyle("none")
-    console.log("clicked")
   }
 
   useEffect(() => {
