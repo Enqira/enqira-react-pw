@@ -37,7 +37,7 @@ export default function SingleProject({ project }) {
         </a>
       </div>
       <div className="project-build-with">
-        <h4>Build with:</h4>
+        <h4>Built with:</h4>
         <div>
           <TechComponent arr={skills} />
         </div>

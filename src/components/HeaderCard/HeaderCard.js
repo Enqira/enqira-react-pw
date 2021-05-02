@@ -5,7 +5,11 @@ import githubLogo from "../../images/git-logo.png"
 import linkedinLogo from "../../images/linkedin-logo.png"
 import emailLogo from "../../images/email-logo.png"
 
-export default function HeaderCard() {
+export default function HeaderCard({
+  setContactStyle,
+  contactStyle,
+  setEffectState
+}) {
   const [cardStyle, setCardStyle] = useState()
   const containerRef = useRef()
   const picBackRef = useRef()
@@ -13,6 +17,10 @@ export default function HeaderCard() {
   const titleRef = useRef()
   const descriptionRef = useRef()
   const picRef = useRef()
+
+  const handleContactClick = () => {
+    contactStyle === "none" ? setContactStyle("flex") : setContactStyle("none")
+  }
 
   useEffect(() => {
     //   add event listener of mouse movement inside container
@@ -80,7 +88,7 @@ export default function HeaderCard() {
           <div className="header-links" ref={btnRef}>
             <img src={githubLogo} alt="github" />
             <img src={linkedinLogo} alt="linkedin" />
-            <img src={emailLogo} alt="email" />
+            <img src={emailLogo} alt="email" onClick={handleContactClick} />
           </div>
         </div>
       </div>

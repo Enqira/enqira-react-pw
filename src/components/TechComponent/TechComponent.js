@@ -1,6 +1,8 @@
-import React from "react"
+import React, { useRef } from "react"
 import { v4 as uuidv4 } from "uuid"
 import "./TechComponent.css"
+import useOnScreen from "../useOnScreen"
+
 import cssLogo from "../../images/frontend/css.png"
 import htmlLogo from "../../images/frontend/html.png"
 import javascriptLogo from "../../images/frontend/javascript.png"
@@ -130,10 +132,11 @@ const data = [
 ]
 
 export default function TechComponent({ arr }) {
+  const ref = useRef(null)
   const newArr = arr.map(item => data.filter(skill => skill.name === item))
 
   return (
-    <div className="tech-group">
+    <div className="tech-group" style={useOnScreen(ref)} ref={ref}>
       {newArr.map(item =>
         item.map(skill => {
           return (
