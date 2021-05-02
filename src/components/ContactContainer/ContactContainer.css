@@ -28,9 +28,13 @@
 }
 input,
 textarea {
-  background-color: rgb(245, 245, 245);
-  border-width: 1px;
-  border-style: solid;
+  /* background-color: #f3f2ef; */
+  background: #5879b357;
+
+  /* border-width: 1px; */
+  border-style: none;
+  border-radius: 3px;
+  /* box-shadow: 0 5px 10px rgb(0 0 0 / 20%); */
 }
 input.submit-btn {
   width: 120px;

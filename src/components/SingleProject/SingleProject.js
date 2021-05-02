@@ -8,6 +8,7 @@ export default function SingleProject({ project }) {
     description,
     skills,
     image,
+    image2,
     repository,
     website,
     repository2
@@ -22,7 +23,7 @@ export default function SingleProject({ project }) {
       <h3>{name}</h3>
       <div>
         <img className="projectImg" src={image} alt={name} />
-        <img className="projectImg" src={image} alt={name} />
+        <img className="projectImg" src={image2} alt={name} />
       </div>
       <p>{description}</p>
       <div className="rep-web-links-container">
