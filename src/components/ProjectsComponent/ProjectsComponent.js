@@ -2,12 +2,16 @@ import React from "react"
 import { v4 as uuidv4 } from "uuid"
 import "./ProjectsComponent.css"
 import SingleProject from "../SingleProject/SingleProject.js"
-import invitaImg from "../../images/projects/invita1.png"
+import invitaImg from "../../images/projects/invita-screen1.png"
+import invita2Img from "../../images/projects/invita-screen2.png"
+import cloudpackImg from "../../images/projects/cloudpack-1.png"
+import cloudpack2Img from "../../images/projects/cloudpack-2.png"
 
 const arr = [
   {
     name: "invita",
     image: invitaImg,
+    image2: invita2Img,
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
     skills: ["MySQL", "express", "ReactJS", "NodeJS"],
@@ -16,7 +20,8 @@ const arr = [
   },
   {
     name: "Cloudpack",
-    image: invitaImg,
+    image: cloudpackImg,
+    image2: cloudpack2Img,
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
     skills: [
@@ -28,8 +33,8 @@ const arr = [
       "CSS",
       "Javascript"
     ],
-    repository: "https://github.com/Enqira/meal-sharing",
-    repository2: "https://github.com/Enqira/meal-sharing",
+    repository: "https://github.com/Enqira/Skadepot-Server/",
+    repository2: "https://github.com/Enqira/Skadepot/",
     website: "http://cp.enqira.com/"
   }
 ]

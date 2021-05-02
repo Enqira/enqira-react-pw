@@ -8,30 +8,30 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
   const [alertOpacity, setAlertOpacity] = useState(0)
   //   Is effect component hidden
   const [effectState, setEffectState] = useState(false)
-  const {
-    REACT_APP_EMAIL_SERVICE,
-    REACT_APP_EMAIL_TEMPLATE,
-    REACT_APP_EMAIL_USER
-  } = process.env
+  //   const {
+  //     REACT_APP_EMAIL_SERVICE,
+  //     REACT_APP_EMAIL_TEMPLATE,
+  //     REACT_APP_EMAIL_USER
+  //   } = process.env
 
   function sendEmail(e) {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        REACT_APP_EMAIL_SERVICE,
-        REACT_APP_EMAIL_TEMPLATE,
-        e.target,
-        REACT_APP_EMAIL_USER
-      )
-      .then(
-        result => {
-          console.log(result.text)
-        },
-        error => {
-          console.log(error.text)
-        }
-      )
+    // emailjs
+    //   .sendForm(
+    //     REACT_APP_EMAIL_SERVICE,
+    //     REACT_APP_EMAIL_TEMPLATE,
+    //     e.target,
+    //     REACT_APP_EMAIL_USER
+    //   )
+    //   .then(
+    //     result => {
+    //       console.log(result.text)
+    //     },
+    //     error => {
+    //       console.log(error.text)
+    //     }
+    //   )
     //   reset email input fields
     e.target.reset()
     setEffectState(true)
