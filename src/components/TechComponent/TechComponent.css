@@ -8,6 +8,15 @@
   transition-delay: 5s;
   transition: all 1s ease;
   opacity: 0;
+  font-family: "Roboto", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #5879b3;
+}
+a:hover {
+  color: #000000;
 }
 .tech-item-container {
   display: flex;

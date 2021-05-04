@@ -4,14 +4,14 @@
   transition: all ease;
   transition-duration: 2s;
 }
+.contact-container svg {
+  transition: all 0.5s ease;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 15px;
-  /* transition: all ease;
-  transition-duration: 2s;
-  transition-delay: 1s; */
 }
 .contact-form div {
   margin: 10px 0;
@@ -28,13 +28,9 @@
 }
 input,
 textarea {
-  /* background-color: #f3f2ef; */
   background: #5879b357;
-
-  /* border-width: 1px; */
   border-style: none;
   border-radius: 3px;
-  /* box-shadow: 0 5px 10px rgb(0 0 0 / 20%); */
 }
 input.submit-btn {
   width: 120px;
@@ -42,7 +38,7 @@ input.submit-btn {
   margin: 5px;
   align-self: center;
   border-style: none;
-  background: #5879b3ce;
+  background: linear-gradient(to left, #89a5d4, #5879b3, #364a70);
   color: white;
   font-family: "Roboto mono", "Roboto", sans-serif;
   font-size: 15px;
@@ -50,7 +46,7 @@ input.submit-btn {
 }
 input.submit-btn:hover {
   cursor: pointer;
-  background: #5879b3fb;
+  background: linear-gradient(to left, #7a94c2, #4c6a9e, #2a3b5c);
 }
 .scale-up-ver-top {
   -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
@@ -64,11 +60,6 @@ input.submit-btn:hover {
   transition-delay: 0.5s;
   text-align: center;
 }
-/* Button partics */
-/* .styles_particles__5dxGv {
-  display: flex;
-  justify-content: center;
-} */
 
 @-webkit-keyframes scale-up-ver-top {
   0% {

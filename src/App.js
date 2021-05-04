@@ -7,6 +7,7 @@ import ProjectsComponent from "./components/ProjectsComponent/ProjectsComponent"
 import CoursesComponent from "./components/Courses/CoursesComponent"
 import OthersComponent from "./components/Others/OthersComponent"
 import ContactContainer from "./components/ContactContainer/ContactContainer"
+import JobExperienceComponent from "./components/JobExperience/JobExperienceComponent"
 
 function App() {
   const [contactStyle, setContactStyle] = useState("none")
@@ -25,6 +26,7 @@ function App() {
       <SkillsComponent />
       <ProjectsComponent />
       <CoursesComponent />
+      <JobExperienceComponent />
       <OthersComponent />
     </div>
   )

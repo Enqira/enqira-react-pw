@@ -18,7 +18,6 @@ import elasticLogo from "../../images/others/elasticsearch.png"
 import firgmaLogo from "../../images/others/figma.png"
 import gitLogo from "../../images/git-logo.png"
 import adobeLogo from "../../images/others/adobe.png"
-import repositoryLogo from "../../images/repository.png"
 import linkLogo from "../../images/link.png"
 import spanishLogo from "../../images/flags/spanish.png"
 import frenchLogo from "../../images/flags/french.png"
@@ -87,11 +86,11 @@ const data = [
   },
   {
     name: "repository",
-    path: repositoryLogo
+    path: gitLogo
   },
   {
     name: "App repository",
-    path: repositoryLogo
+    path: gitLogo
   },
   {
     name: "express",

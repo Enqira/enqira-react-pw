@@ -17,7 +17,9 @@
 .header-circle {
   width: 160px;
   height: 160px;
-  background: #5879b3ce;
+  /* background: #5879b3ce; */
+  background: linear-gradient(to bottom, #a3bdeb, #5879b3, #020112);
+  /* background: linear-gradient(to bottom, #ec593f, #020112); */
   position: absolute;
   border-radius: 50%;
   z-index: 1;
