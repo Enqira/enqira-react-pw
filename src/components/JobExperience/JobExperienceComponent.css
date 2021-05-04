@@ -1,0 +1,5 @@
+.job-experience-container {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}

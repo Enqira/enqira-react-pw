@@ -8,6 +8,25 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
   const [alertOpacity, setAlertOpacity] = useState(0)
   //   Is effect component hidden
   const [effectState, setEffectState] = useState(false)
+  const [onHoverStyle, setOnHoverStyle] = useState("lightblue")
+  const [closeOpacity, setCloseOpacity] = useState(1)
+
+  //   refs and function to handle closing card
+  const closeCardFunc = () => {
+    setEffectState(true)
+    setCloseOpacity(0)
+    setAlertOpacity(1)
+
+    // wait some seconds before closing the card, the alert
+    // and setting the state of the effect component to hidden false
+    setTimeout(() => {
+      setContactStyle("none")
+      setEffectState(false)
+      setCloseOpacity(1)
+      setAlertOpacity(0)
+    }, 3500)
+  }
+
   //   const {
   //     REACT_APP_EMAIL_SERVICE,
   //     REACT_APP_EMAIL_TEMPLATE,
@@ -34,15 +53,7 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
     //   )
     //   reset email input fields
     e.target.reset()
-    setEffectState(true)
-    setAlertOpacity(1)
-    // wait some seconds before closing the card, the alert
-    // and setting the state of the effect component to hidden false
-    setTimeout(() => {
-      setContactStyle("none")
-      setAlertOpacity(0)
-      setEffectState(false)
-    }, 3500)
+    closeCardFunc()
   }
 
   return (
@@ -58,6 +69,8 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
         direction="bottom"
         hidden={effectState}
         visible={effectState}
+        particlesAmountCoefficient={3}
+        duration={800}
       >
         <div className="card">
           <h2>Contact</h2>

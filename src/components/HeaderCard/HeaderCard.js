@@ -17,9 +17,14 @@ export default function HeaderCard({
   const titleRef = useRef()
   const descriptionRef = useRef()
   const picRef = useRef()
+  //   ref to make scroll to contact card
+  const contactRef = useRef()
 
   const handleContactClick = () => {
+    //   make contact carrd apear
     contactStyle === "none" ? setContactStyle("flex") : setContactStyle("none")
+    // scroll to contact card
+    contactRef.current.scrollIntoView({ behavior: "smooth" })
   }
 
   useEffect(() => {
@@ -88,7 +93,12 @@ export default function HeaderCard({
           <div className="header-links" ref={btnRef}>
             <img src={githubLogo} alt="github" />
             <img src={linkedinLogo} alt="linkedin" />
-            <img src={emailLogo} alt="email" onClick={handleContactClick} />
+            <img
+              src={emailLogo}
+              alt="email"
+              onClick={handleContactClick}
+              ref={contactRef}
+            />
           </div>
         </div>
       </div>
