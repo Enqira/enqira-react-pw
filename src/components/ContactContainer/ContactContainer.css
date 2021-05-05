@@ -4,14 +4,14 @@
   transition: all ease;
   transition-duration: 2s;
 }
-.contact-container svg {
-  transition: all 0.5s ease;
+.x-button {
+  float: right;
+  cursor: pointer;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 15px;
 }
 .contact-form div {
   margin: 10px 0;
@@ -35,18 +35,19 @@ textarea {
 input.submit-btn {
   width: 120px;
   height: 35px;
-  margin: 5px;
+  margin: 5px 0 15px;
   align-self: center;
   border-style: none;
-  background: linear-gradient(to left, #89a5d4, #5879b3, #364a70);
   color: white;
   font-family: "Roboto mono", "Roboto", sans-serif;
   font-size: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to left, #5879b3dc, #020112da);
 }
+
 input.submit-btn:hover {
   cursor: pointer;
-  background: linear-gradient(to left, #7a94c2, #4c6a9e, #2a3b5c);
+  background: linear-gradient(to left, #5879b3, #020112);
 }
 .scale-up-ver-top {
   -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)

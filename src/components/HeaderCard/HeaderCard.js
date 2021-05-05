@@ -19,12 +19,17 @@ export default function HeaderCard({
   const picRef = useRef()
   //   ref to make scroll to contact card
   const contactRef = useRef()
+  const downloadRef = useRef()
 
   const handleContactClick = () => {
-    //   make contact carrd apear
+    //   make contact card apear
     contactStyle === "none" ? setContactStyle("flex") : setContactStyle("none")
     // scroll to contact card
     contactRef.current.scrollIntoView({ behavior: "smooth" })
+  }
+  //   handle on click download CV
+  const downloadCV = () => {
+    console.log("clicked")
   }
 
   useEffect(() => {
@@ -40,13 +45,15 @@ export default function HeaderCard({
     //  add event listener to know when the mouse entered the container
     containerRef.current.addEventListener("mouseenter", e => {
       picRef.current.style.transform =
-        "scaleX(0.9) scaleY(0.9) translateZ(50px)"
-      titleRef.current.style.transform = "translateZ(200px)"
+        "scaleX(0.9) scaleY(0.9) translateZ(30px)"
+      titleRef.current.style.transform = "translateZ(150px)"
       descriptionRef.current.style.transform = "translateZ(80px)"
-      btnRef.current.style.transform = "translateZ(100px)"
+      btnRef.current.style.transform = "translateZ(75px)"
 
       picBackRef.current.style.width = "155px"
       picBackRef.current.style.height = "155px"
+
+      downloadRef.current.style.transform = "translateZ(100px)"
     })
 
     // add event listener to make card turn to initial rotation when mouse leavs container
@@ -55,14 +62,16 @@ export default function HeaderCard({
         transform: `rotateX(0deg) rotateY(0deg)`,
         transition: "all 0.5s ease"
       })
-      picRef.current.style.transform = "scaleX(0.8) scaleY(0.8) translateZ(0px)"
+      picRef.current.style.transform = "scaleX(0.8) scaleY(0.8) translateZ(0)"
 
-      titleRef.current.style.transform = "translateZ(0px)"
-      descriptionRef.current.style.transform = "translateZ(0px)"
-      btnRef.current.style.transform = "translateZ(0px)"
+      titleRef.current.style.transform = "translateZ(0)"
+      descriptionRef.current.style.transform = "translateZ(0)"
+      btnRef.current.style.transform = "translateZ(0)"
 
       picBackRef.current.style.width = "160px"
       picBackRef.current.style.height = "160px"
+
+      downloadRef.current.style.transform = "translateZ(0)"
     })
     // remove the event listeners, otherwise a lot of event listener will be created, and may slow down computer
     containerRef.current.removeEventListener("mousemove", () => {})
@@ -93,12 +102,16 @@ export default function HeaderCard({
           <div className="header-links" ref={btnRef}>
             <img src={githubLogo} alt="github" />
             <img src={linkedinLogo} alt="linkedin" />
-            <img
-              src={emailLogo}
-              alt="email"
-              onClick={handleContactClick}
+            <img src={emailLogo} alt="email" onClick={handleContactClick} />
+          </div>
+          <div className="download-button-container" ref={downloadRef}>
+            <button
+              className="download-button"
+              onClick={downloadCV}
               ref={contactRef}
-            />
+            >
+              Download CV
+            </button>
           </div>
         </div>
       </div>

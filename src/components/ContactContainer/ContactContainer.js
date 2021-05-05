@@ -8,13 +8,10 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
   const [alertOpacity, setAlertOpacity] = useState(0)
   //   Is effect component hidden
   const [effectState, setEffectState] = useState(false)
-  const [onHoverStyle, setOnHoverStyle] = useState("lightblue")
-  const [closeOpacity, setCloseOpacity] = useState(1)
 
   //   refs and function to handle closing card
   const closeCardFunc = () => {
     setEffectState(true)
-    setCloseOpacity(0)
     setAlertOpacity(1)
 
     // wait some seconds before closing the card, the alert
@@ -22,8 +19,15 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
     setTimeout(() => {
       setContactStyle("none")
       setEffectState(false)
-      setCloseOpacity(1)
       setAlertOpacity(0)
+    }, 3500)
+  }
+  const closeForm = () => {
+    setEffectState(true)
+
+    setTimeout(() => {
+      setContactStyle("none")
+      setEffectState(false)
     }, 3500)
   }
 
@@ -73,6 +77,23 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
         duration={800}
       >
         <div className="card">
+          <div className="x-button" onClick={closeForm}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#5879b3"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="15" y1="9" x2="9" y2="15"></line>
+              <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg>
+          </div>
           <h2>Contact</h2>
           <p>
             Email: moenqira@gmail.com <br />
