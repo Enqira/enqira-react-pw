@@ -1,30 +1,21 @@
 import React, { useState } from "react"
 import emailjs from "emailjs-com"
-import ParticleEffect from "react-particle-effect-button"
+// import ParticleEffect from "react-particle-effect-button"
+import TheCloud from "../BackgroundSVG/TheCloud"
 
 import "./ContactContainer.css"
 
 export default function ContactContainer({ contactStyle, setContactStyle }) {
   const [alertOpacity, setAlertOpacity] = useState(0)
   //   Is effect component hidden
-  const [effectState, setEffectState] = useState(false)
-  const [onHoverStyle, setOnHoverStyle] = useState("lightblue")
-  const [closeOpacity, setCloseOpacity] = useState(1)
+  //   const [effectState, setEffectState] = useState(false)
+  //   const [sendClicked, setSendClicked] = useState(false)
+  //   const [closeClicked, setCloseClicked] = useState(false)
 
-  //   refs and function to handle closing card
-  const closeCardFunc = () => {
-    setEffectState(true)
-    setCloseOpacity(0)
-    setAlertOpacity(1)
-
-    // wait some seconds before closing the card, the alert
-    // and setting the state of the effect component to hidden false
-    setTimeout(() => {
-      setContactStyle("none")
-      setEffectState(false)
-      setCloseOpacity(1)
-      setAlertOpacity(0)
-    }, 3500)
+  //   when the popup close button clicked from popup
+  const handleCloseClicked = () => {
+    setContactStyle("none")
+    setAlertOpacity(0)
   }
 
   //   const {
@@ -53,7 +44,7 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
     //   )
     //   reset email input fields
     e.target.reset()
-    closeCardFunc()
+    setAlertOpacity(1)
   }
 
   return (
@@ -64,42 +55,62 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
         transition: "all 1s ease"
       }}
     >
-      <ParticleEffect
-        color="#5879b3fb"
-        direction="bottom"
-        hidden={effectState}
-        visible={effectState}
-        particlesAmountCoefficient={3}
-        duration={800}
-      >
+      <div>
         <div className="card">
+          <div className="x-button" onClick={handleCloseClicked}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#FFBE55"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="15" y1="9" x2="9" y2="15"></line>
+              <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg>
+          </div>
           <h2>Contact</h2>
-          <p>
-            Email: moenqira@gmail.com <br />
-            Phone: +45 60186035
-          </p>
-          <p>Or fill up this form:</p>
+          <div className="form-cloud-container">
+            <div className="form-container">
+              <p>
+                Email: moenqira@gmail.com <br />
+                Phone: +45 60186035
+              </p>
+              <p>Or fill up this form:</p>
 
-          <form className="contact-form" onSubmit={sendEmail}>
-            <div className="contact-column">
-              <label>Name </label>
-              <input type="text" name="user_name" />
+              <form className="contact-form" onSubmit={sendEmail}>
+                <div className="form-coder-container">
+                  <div className="name-email-container">
+                    <div className="contact-column">
+                      <label>Name </label>
+                      <input type="text" name="user_name" />
+                    </div>
+                    <div className="contact-column email-input">
+                      <label>Email </label>
+                      <input type="email" name="user_email" />
+                    </div>
+                  </div>
+                  <TheCloud />
+                </div>
+                <div className="contact-message">
+                  <label>Message </label>
+                  <textarea name="message" required />
+                </div>
+                <input className="submit-btn" type="submit" value="Send" />
+              </form>
             </div>
-            <div className="contact-column">
-              <label>Email </label>
-              <input type="email" name="user_email" />
-            </div>
-            <div className="contact-message">
-              <label>Message </label>
-              <textarea name="message" required />
-            </div>
-            <input className="submit-btn" type="submit" value="Send" />
-          </form>
+          </div>
         </div>
-      </ParticleEffect>
+      </div>
       <div className="alert" style={{ opacity: alertOpacity }}>
         Thank you!
         <br /> Message sent successfully!
+        <button onClick={handleCloseClicked}>Close</button>
       </div>
     </div>
   )
