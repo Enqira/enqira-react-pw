@@ -13,7 +13,7 @@ const arr = [
     image: invitaImg,
     image2: invita2Img,
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
+      "Website for sharing meals. Invite your best friends or your family for dinner, you can add reserve or review meals.",
     skills: ["MySQL", "express", "ReactJS", "NodeJS"],
     repository: "https://github.com/Enqira/meal-sharing",
     website: "https://invita.herokuapp.com/"
@@ -23,7 +23,7 @@ const arr = [
     image: cloudpackImg,
     image2: cloudpack2Img,
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
+      "A fully working system consisting of an app & an admin website to track damaged packages. You can use the app to scan the barcode, add a comment & take pictures of the damage, & use the admin website to review it, send it by email, see them all, & more. ",
     skills: [
       "mongoDB",
       "express",

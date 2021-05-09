@@ -22,8 +22,8 @@ export default function SingleProject({ project }) {
     <div className="single-project-container">
       <h3>{name}</h3>
       <div>
-        <img className="projectImg" src={image} alt={name} />
         <img className="projectImg" src={image2} alt={name} />
+        <img className="projectImg" src={image} alt={name} />
       </div>
       <p>{description}</p>
       <div className="rep-web-links-container">

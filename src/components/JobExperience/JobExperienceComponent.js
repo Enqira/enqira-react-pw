@@ -9,28 +9,24 @@ export default function JobExperienceComponent() {
         <h3>Fixpress</h3>
         <div>
           <p>
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have scrambled parts
+            {`Fixpress was a small computer & mobile repair shop. My role was to repair electronics and attend clients.`}
           </p>
         </div>
         <h3>PcBox/Let's Play</h3>
         <div>
           <p>
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have scrambled parts
+            {`
+PcBox/Let's Play is an Esport center with 110 robust gaming computers and 8 PlayStations. My role consisted of help build and maintain the center computers, install and patch games, and fix any issue that could occur in the network.`}
           </p>
         </div>
         <h3>Brink Transport</h3>
         <div>
           <p>
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have scrambled parts
+            Brink transport is a danish transport company. My daily activities
+            at the company changed every day depending of the needs, some of the
+            roles that I had conisted of help plan the route for the drivers in
+            Sjælland, sort goods, deliver packages, drive trucks to mechanics
+            for service or reparation among other things.
           </p>
         </div>
       </div>

@@ -42,7 +42,6 @@
 }
 .header-info h1 {
   transition: all 0.3s ease-out;
-  color: rgba(0, 0, 0, 0.86);
   text-transform: uppercase;
   font-size: 1.5em;
   letter-spacing: 0.1rem;
@@ -50,7 +49,6 @@
 }
 .header-info p {
   transition: all 0.3s ease-out;
-  font-family: "Roboto mono", "Roboto", sans-serif;
   font-size: 1.2rem;
 }
 .header-info {
@@ -89,7 +87,6 @@
   height: 35px;
   border-style: none;
   color: white;
-  font-family: "Roboto mono", "Roboto", sans-serif;
   font-size: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background-color: #0e538c;

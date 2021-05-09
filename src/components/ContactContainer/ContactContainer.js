@@ -7,10 +7,6 @@ import "./ContactContainer.css"
 
 export default function ContactContainer({ contactStyle, setContactStyle }) {
   const [alertOpacity, setAlertOpacity] = useState(0)
-  //   Is effect component hidden
-  //   const [effectState, setEffectState] = useState(false)
-  //   const [sendClicked, setSendClicked] = useState(false)
-  //   const [closeClicked, setCloseClicked] = useState(false)
 
   //   when the popup close button clicked from popup
   const handleCloseClicked = () => {
@@ -108,9 +104,11 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
         </div>
       </div>
       <div className="alert" style={{ opacity: alertOpacity }}>
-        Thank you!
-        <br /> Message sent successfully!
-        <button onClick={handleCloseClicked}>Close</button>
+        Thank you for your message!
+        <br /> I will get back to you as soon as possible.
+        <button className="close-btn" onClick={handleCloseClicked}>
+          Close
+        </button>
       </div>
     </div>
   )

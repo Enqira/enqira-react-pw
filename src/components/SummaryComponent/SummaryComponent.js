@@ -9,10 +9,12 @@ export default function SummaryComponent() {
         <h2>Summary</h2>
         <div className="p-svg-container">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make{" "}
+            {`Enthusiastic and creative technologist with good computer science
+            fundamentals knowledge & hands-on skills in a wide range of
+            software and tools. I like solving back-end problems as much as
+            creating modern, beautiful and responsive front-end websites. My go
+            to back-end plataform is NodeJS and front-end library is React, But
+            I will be happy to jump in a very short time to any required one.`}
           </p>
           <CodingSVG />
         </div>

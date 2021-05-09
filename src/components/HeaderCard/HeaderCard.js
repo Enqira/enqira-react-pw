@@ -47,7 +47,7 @@ export default function HeaderCard({
         "scaleX(0.9) scaleY(0.9) translateZ(30px)"
       titleRef.current.style.transform = "translateZ(150px)"
       descriptionRef.current.style.transform = "translateZ(80px)"
-      btnRef.current.style.transform = "translateZ(75px)"
+      btnRef.current.style.transform = "translateZ(100px)"
 
       picBackRef.current.style.width = "155px"
       picBackRef.current.style.height = "155px"
@@ -94,13 +94,26 @@ export default function HeaderCard({
           <h1 className="header-title" ref={titleRef}>
             MOHAMMED ENQIRA
           </h1>
+
           <p ref={descriptionRef}>
-            Very motivated, hard worker and fast learner Full stack developer
-            with a strong will to solve real world problems and build projects.{" "}
+            Motivated and fast learner Web Developer who enjoys solving problems
+            and building projects.
           </p>
           <div className="header-links" ref={btnRef}>
-            <img src={githubLogo} alt="github" />
-            <img src={linkedinLogo} alt="linkedin" />
+            <a
+              href="https://www.github.com/enqira"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={githubLogo} alt="github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/enqira/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedinLogo} alt="linkedin" />
+            </a>
             <img src={emailLogo} alt="email" onClick={handleContactClick} />
           </div>
           <div className="download-button-container" ref={downloadRef}>
