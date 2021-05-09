@@ -1,35 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 * {
   box-sizing: border-box;
+  color: white;
 }
 
 body {
   margin: 0;
-  overflow-x: hidden;
   font-family: "Roboto mono", "Roboto", sans-serif;
-  background-color: #f3f2ef;
+  background-color: #00021d;
 }
 
 .card {
   width: 54rem;
-  box-shadow: 0 5px 10px #5879b313, 0 0 30px #02011213;
+  box-shadow: 0 5px 10px #00000013, 0 0 30px #02011227;
   padding: 2rem 5rem 1rem 5rem;
   margin: 10px;
   background-color: white;
   border-radius: 10px;
+  z-index: 2;
+  background-color: #454d66;
 }
 p {
   font-size: 15px;
+  color: white;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
+  color: white !important;
 }
 
 h2 {
   opacity: 0.9;
   letter-spacing: 0.1rem;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 h3 {
   font-size: 20px;
@@ -38,20 +43,20 @@ h3 {
   text-align: center;
   margin-bottom: 10px;
   color: white;
-  background: linear-gradient(to left, #5879b3, #020112ec);
-
+  background-color: #ffbe55;
   padding: 5px;
   box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
   width: 100%;
   border-radius: 5px;
+  color: white;
 }
 .tech-item-container span {
   font-size: 13px;
 }
 
 .slide-top {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   opacity: 0;
   animation-delay: 0.2s;
 }

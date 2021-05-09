@@ -3,10 +3,15 @@
   justify-content: center;
   transition: all ease;
   transition-duration: 2s;
+  margin: 0;
 }
 .x-button {
   float: right;
   cursor: pointer;
+}
+.x-button:hover {
+  transform: scale(1.07);
+  opacity: 0.7;
 }
 .contact-form {
   display: flex;
@@ -14,17 +19,22 @@
   justify-content: space-around;
 }
 .contact-form div {
-  margin: 10px 0;
   font-size: 14px;
+  z-index: 5;
 }
 .contact-column {
   display: flex;
   flex-direction: column;
 }
+.contact-message {
+  display: flex;
+  flex-direction: column;
+}
 
 .contact-message textarea {
-  width: 100%;
+  /* width: 163%; */
   min-height: 80px;
+  margin-bottom: 15px;
 }
 input,
 textarea {
@@ -32,6 +42,7 @@ textarea {
   border-style: none;
   border-radius: 3px;
 }
+
 input.submit-btn {
   width: 120px;
   height: 35px;
@@ -42,12 +53,14 @@ input.submit-btn {
   font-family: "Roboto mono", "Roboto", sans-serif;
   font-size: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to left, #5879b3dc, #020112da);
+  background-color: #0e538c;
+  z-index: 2;
 }
 
 input.submit-btn:hover {
   cursor: pointer;
-  background: linear-gradient(to left, #5879b3, #020112);
+  background-color: #0c497a;
+  transform: scale(1.04);
 }
 .scale-up-ver-top {
   -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
@@ -57,9 +70,19 @@ input.submit-btn:hover {
 .alert {
   position: absolute;
   top: 45%;
-  transition: 1s;
-  transition-delay: 0.5s;
+  transition: 0.5s;
+  transition-delay: 0.3s;
   text-align: center;
+  z-index: 5;
+  background-color: #ffbe55;
+  padding: 30px;
+  border-radius: 8px;
+}
+.form-container {
+  width: 100%;
+}
+.form-cloud-container {
+  display: flex;
 }
 
 @-webkit-keyframes scale-up-ver-top {
@@ -93,4 +116,16 @@ input.submit-btn:hover {
     transform-origin: 100% 0%;
     opacity: 1;
   }
+}
+
+.form-coder-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -18px;
+}
+.name-email-container {
+  width: 79%;
+}
+.email-input {
+  padding-top: 28px;
 }

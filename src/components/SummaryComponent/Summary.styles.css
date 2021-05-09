@@ -2,3 +2,12 @@
   display: flex;
   justify-content: center;
 }
+
+.p-svg-container {
+  display: flex;
+}
+
+.p-svg-container p {
+  width: 77%;
+  align-self: center;
+}

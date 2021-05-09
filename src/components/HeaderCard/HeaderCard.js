@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from "react"
 import "./HeaderCard.css"
 import profileImg from "../../images/profile-img.png"
-import githubLogo from "../../images/git-logo.png"
-import linkedinLogo from "../../images/linkedin-logo.png"
-import emailLogo from "../../images/email-logo.png"
+import githubLogo from "../../images/github.svg"
+import linkedinLogo from "../../images/linkedin.svg"
+import emailLogo from "../../images/mail.svg"
 
 export default function HeaderCard({
   setContactStyle,
@@ -20,7 +20,6 @@ export default function HeaderCard({
   //   ref to make scroll to contact card
   const contactRef = useRef()
   const downloadRef = useRef()
-
   const handleContactClick = () => {
     //   make contact card apear
     contactStyle === "none" ? setContactStyle("flex") : setContactStyle("none")

@@ -1,0 +1,14 @@
+.vector-computer {
+  position: fixed;
+  bottom: 0;
+}
+.coding-background {
+  z-index: 0;
+  bottom: 16px;
+  width: 24%;
+}
+
+.contact-human {
+  width: 16%;
+  margin-right: 24px;
+}
