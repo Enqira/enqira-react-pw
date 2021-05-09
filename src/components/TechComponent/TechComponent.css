@@ -8,7 +8,6 @@
   transition-delay: 5s;
   transition: all 1s ease;
   opacity: 0;
-  font-family: "Roboto", monospace;
 }
 
 a {

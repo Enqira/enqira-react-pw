@@ -14,12 +14,13 @@ export default function CoursesComponent() {
           <h2>Courses</h2>
           <h3>HackYourFuture Coding School</h3>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            {`8+ month of intensive study to fully prepare students for a Full
+            Stack Web Developer role using the latest technologies in the web
+            development industry. The curriculum consist of a React, Node, Javascript, HTML, CSS, MySQL and Git
+            modules among others. Students also learn how to work in team,
+             and get prepared for the job market.
+            Futhermore students get mentored by founders and employees of great
+            companies such Elasticsearch and Zendesk.`}
           </p>
           <div>
             <a href={hyf_URL} target="_blank" rel="noreferrer">

@@ -4,8 +4,8 @@
 }
 .coding-background {
   z-index: 0;
-  bottom: 16px;
   width: 24%;
+  margin-top: -30px;
 }
 
 .contact-human {
