@@ -26,10 +26,6 @@ export default function HeaderCard({
     // scroll to contact card
     contactRef.current.scrollIntoView({ behavior: "smooth" })
   }
-  //   handle on click download CV
-  const downloadCV = () => {
-    console.log("clicked")
-  }
 
   useEffect(() => {
     //   add event listener of mouse movement inside container
@@ -47,12 +43,12 @@ export default function HeaderCard({
         "scaleX(0.9) scaleY(0.9) translateZ(30px)"
       titleRef.current.style.transform = "translateZ(150px)"
       descriptionRef.current.style.transform = "translateZ(80px)"
-      btnRef.current.style.transform = "translateZ(100px)"
+      btnRef.current.style.transform = "translateZ(150px)"
 
       picBackRef.current.style.width = "155px"
       picBackRef.current.style.height = "155px"
 
-      downloadRef.current.style.transform = "translateZ(100px)"
+      downloadRef.current.style.transform = "translateZ(70px)"
     })
 
     // add event listener to make card turn to initial rotation when mouse leavs container
@@ -117,13 +113,15 @@ export default function HeaderCard({
             <img src={emailLogo} alt="email" onClick={handleContactClick} />
           </div>
           <div className="download-button-container" ref={downloadRef}>
-            <button
+            <a
               className="download-button"
-              onClick={downloadCV}
               ref={contactRef}
+              href="https://drive.google.com/file/d/1LjD8kLF9OpAKKjhehUM1v1FElioIPz8C/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Download CV
-            </button>
+              See CV
+            </a>
           </div>
         </div>
       </div>

@@ -77,7 +77,6 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
                 Email: moenqira@gmail.com <br />
                 Phone: +45 60186035
               </p>
-              <p>Or fill up this form:</p>
 
               <form className="contact-form" onSubmit={sendEmail}>
                 <div className="form-coder-container">

@@ -14,7 +14,7 @@ export default function SummaryComponent() {
             software and tools. I like solving back-end problems as much as
             creating modern, beautiful and responsive front-end websites. My go
             to back-end plataform is NodeJS and front-end library is React, But
-            I will be happy to jump in a very short time to any required one.`}
+            I will be happy to jump in a very short time to any required ones.`}
           </p>
           <CodingSVG />
         </div>

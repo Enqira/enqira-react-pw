@@ -83,8 +83,7 @@
   transform: scale(1.1);
 }
 .download-button {
-  width: 120px;
-  height: 35px;
+  padding: 6px 30px;
   border-style: none;
   color: white;
   font-size: 15px;
@@ -94,11 +93,11 @@
   cursor: pointer;
 }
 .download-button:hover {
+  color: #fff;
   background-color: #0c497a;
-  transform: scale(1.04);
 }
 .download-button-container {
   transition-delay: 0.3s;
   transition: all 0.3s ease-out;
-  margin-top: 12px;
+  margin-top: 20px;
 }
