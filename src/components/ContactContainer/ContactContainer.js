@@ -1,11 +1,15 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import emailjs from "emailjs-com"
 // import ParticleEffect from "react-particle-effect-button"
 import TheCloud from "../BackgroundSVG/TheCloud"
 
 import "./ContactContainer.css"
 
-export default function ContactContainer({ contactStyle, setContactStyle }) {
+export default function ContactContainer({
+  contactStyle,
+  setContactStyle,
+  contactRef
+}) {
   const [alertOpacity, setAlertOpacity] = useState(0)
 
   //   when the popup close button clicked from popup
@@ -42,7 +46,6 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
     e.target.reset()
     setAlertOpacity(1)
   }
-
   return (
     <div
       className="contact-container scale-up-ver-top"
@@ -77,7 +80,6 @@ export default function ContactContainer({ contactStyle, setContactStyle }) {
                 Email: moenqira@gmail.com <br />
                 Phone: +45 60186035
               </p>
-              <p>Or fill up this form:</p>
 
               <form className="contact-form" onSubmit={sendEmail}>
                 <div className="form-coder-container">

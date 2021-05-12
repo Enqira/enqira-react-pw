@@ -8,7 +8,8 @@ import emailLogo from "../../images/mail.svg"
 export default function HeaderCard({
   setContactStyle,
   contactStyle,
-  setEffectState
+  setEffectState,
+  contactRef
 }) {
   const [cardStyle, setCardStyle] = useState()
   const containerRef = useRef()
@@ -18,17 +19,17 @@ export default function HeaderCard({
   const descriptionRef = useRef()
   const picRef = useRef()
   //   ref to make scroll to contact card
-  const contactRef = useRef()
   const downloadRef = useRef()
   const handleContactClick = () => {
     //   make contact card apear
-    contactStyle === "none" ? setContactStyle("flex") : setContactStyle("none")
     // scroll to contact card
-    contactRef.current.scrollIntoView({ behavior: "smooth" })
-  }
-  //   handle on click download CV
-  const downloadCV = () => {
-    console.log("clicked")
+    if (contactStyle === "none") {
+      setContactStyle("flex")
+      contactRef.current.scrollIntoView({ behavior: "smooth" })
+      console.log(contactRef.current)
+    } else {
+      setContactStyle("none")
+    }
   }
 
   useEffect(() => {
@@ -47,12 +48,12 @@ export default function HeaderCard({
         "scaleX(0.9) scaleY(0.9) translateZ(30px)"
       titleRef.current.style.transform = "translateZ(150px)"
       descriptionRef.current.style.transform = "translateZ(80px)"
-      btnRef.current.style.transform = "translateZ(100px)"
+      btnRef.current.style.transform = "translateZ(150px)"
 
       picBackRef.current.style.width = "155px"
       picBackRef.current.style.height = "155px"
 
-      downloadRef.current.style.transform = "translateZ(100px)"
+      downloadRef.current.style.transform = "translateZ(70px)"
     })
 
     // add event listener to make card turn to initial rotation when mouse leavs container
@@ -117,13 +118,15 @@ export default function HeaderCard({
             <img src={emailLogo} alt="email" onClick={handleContactClick} />
           </div>
           <div className="download-button-container" ref={downloadRef}>
-            <button
+            <a
               className="download-button"
-              onClick={downloadCV}
+              href="https://drive.google.com/file/d/1LjD8kLF9OpAKKjhehUM1v1FElioIPz8C/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               ref={contactRef}
             >
-              Download CV
-            </button>
+              See CV
+            </a>
           </div>
         </div>
       </div>

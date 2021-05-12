@@ -16,7 +16,7 @@ export default function JobExperienceComponent() {
         <div>
           <p>
             {`
-PcBox/Let's Play is an Esport center with 110 robust gaming computers and 8 PlayStations. My role consisted of help build and maintain the center computers, install and patch games, and fix any issue that could occur in the network.`}
+PcBox/Let's Play is an Esport center with 110 robust gaming computers and 8 PlayStations. My role consisted of help build and maintain the center computers, install and patch games, and fix issues that could occur in the network.`}
           </p>
         </div>
         <h3>Brink Transport</h3>
