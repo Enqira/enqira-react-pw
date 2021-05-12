@@ -8,7 +8,8 @@ import emailLogo from "../../images/mail.svg"
 export default function HeaderCard({
   setContactStyle,
   contactStyle,
-  setEffectState
+  setEffectState,
+  contactRef
 }) {
   const [cardStyle, setCardStyle] = useState()
   const containerRef = useRef()
@@ -18,13 +19,17 @@ export default function HeaderCard({
   const descriptionRef = useRef()
   const picRef = useRef()
   //   ref to make scroll to contact card
-  const contactRef = useRef()
   const downloadRef = useRef()
   const handleContactClick = () => {
     //   make contact card apear
-    contactStyle === "none" ? setContactStyle("flex") : setContactStyle("none")
     // scroll to contact card
-    contactRef.current.scrollIntoView({ behavior: "smooth" })
+    if (contactStyle === "none") {
+      setContactStyle("flex")
+      contactRef.current.scrollIntoView({ behavior: "smooth" })
+      console.log(contactRef.current)
+    } else {
+      setContactStyle("none")
+    }
   }
 
   useEffect(() => {
@@ -115,10 +120,10 @@ export default function HeaderCard({
           <div className="download-button-container" ref={downloadRef}>
             <a
               className="download-button"
-              ref={contactRef}
               href="https://drive.google.com/file/d/1LjD8kLF9OpAKKjhehUM1v1FElioIPz8C/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              ref={contactRef}
             >
               See CV
             </a>

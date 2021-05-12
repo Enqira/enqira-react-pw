@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import "./App.css"
 import HeaderCard from "./components/HeaderCard/HeaderCard"
 import SummaryComponent from "./components/SummaryComponent/SummaryComponent"
@@ -13,6 +13,7 @@ import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackg
 
 function App() {
   const [contactStyle, setContactStyle] = useState("none")
+  const contactRef = useRef(null)
 
   return (
     <div>
@@ -23,12 +24,18 @@ function App() {
         <HeaderCard
           setContactStyle={setContactStyle}
           contactStyle={contactStyle}
+          contactRef={contactRef}
         />
         <ContactContainer
           contactStyle={contactStyle}
           setContactStyle={setContactStyle}
+          contactRef={contactRef}
         />
-        <SummaryComponent />
+        <SummaryComponent
+          contactStyle={contactStyle}
+          setContactStyle={setContactStyle}
+          contactRef={contactRef}
+        />
         <SkillsComponent />
         <ProjectsComponent />
         <CoursesComponent />
