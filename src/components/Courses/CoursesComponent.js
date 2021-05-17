@@ -1,6 +1,7 @@
 import React from "react"
 import "./CoursesComponent.css"
 import TechComponent from "../TechComponent/TechComponent"
+import TwoLines from "../TwoLines/TwoLinesComponent"
 
 const hyf_URL = "https://hackyourfuture.dk"
 const elastic_URL =
@@ -12,7 +13,7 @@ export default function CoursesComponent() {
       <div className="card">
         <div>
           <h2>Courses</h2>
-          <h3>HackYourFuture Coding School</h3>
+          <TwoLines title={"HackYourFuture Coding School"} />
           <p>
             {`8+ month of intensive study to fully prepare students for a Full
             Stack Web Developer role using the latest technologies in the web
@@ -29,7 +30,7 @@ export default function CoursesComponent() {
           </div>
         </div>
         <div>
-          <h3>Elasticsearch Bootcamp</h3>
+          <TwoLines title={"Elasticsearch Bootcamp"} />
           <p>
             Successfully completed Elasticsearch bootcamp during which we
             learned basic architecture of Elastic. Mastered how to perform CRUD

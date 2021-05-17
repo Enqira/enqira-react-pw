@@ -1,6 +1,7 @@
 import React from "react"
 import "./SingleProject.css"
 import TechComponent from "../TechComponent/TechComponent"
+import TwoLines from "../TwoLines/TwoLinesComponent"
 
 export default function SingleProject({ project }) {
   const {
@@ -20,8 +21,8 @@ export default function SingleProject({ project }) {
   )
   return (
     <div className="single-project-container">
-      <h3>{name}</h3>
       <div>
+        <TwoLines title={name} />
         <img className="projectImg" src={image2} alt={name} />
         <img className="projectImg" src={image} alt={name} />
       </div>

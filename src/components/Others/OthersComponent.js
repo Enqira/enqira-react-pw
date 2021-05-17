@@ -1,13 +1,14 @@
 import React from "react"
 import "./OthersComponent.css"
 import TechComponent from "../TechComponent/TechComponent"
+import TwoLines from "../TwoLines/TwoLinesComponent"
 
 export default function OthersComponent() {
   return (
     <div className="others-container">
       <div className="card">
         <h2>Others</h2>
-        <h3>Languages</h3>
+        <TwoLines title={"Languages"} />
         <h4>Full Proficiency:</h4>
         <div>
           <TechComponent arr={["Arabic", "Spanish", "English"]} />
