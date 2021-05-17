@@ -42,7 +42,7 @@ const arr = [
 export default function ProjectsComponent() {
   return (
     <div className="projects-container">
-      <div className="card">
+      <div className="projects-card card">
         <h2>Projects</h2>
         {arr.map(project => {
           return <SingleProject project={project} key={uuidv4()} />
