@@ -3,10 +3,8 @@ import "./TwoLines.styles.css"
 
 export default function TwoLines({ title }) {
   return (
-    <div className="two-lines-container">
-      <hr />
-      {title}
-      <hr />
+    <div className="container">
+      <hr className="hr-text" data-content={title} />
     </div>
   )
 }

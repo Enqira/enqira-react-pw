@@ -2,6 +2,7 @@ import React from "react"
 import { v4 as uuidv4 } from "uuid"
 import "./SkillsComponent.css"
 import TechComponent from "../TechComponent/TechComponent"
+import TwoLines from "../TwoLines/TwoLinesComponent"
 
 const arr = [
   {
@@ -33,7 +34,8 @@ export default function SkillsComponent() {
         {arr.map(item => {
           return (
             <div className="skill-section" key={uuidv4()}>
-              <h3>{item.group}</h3>
+              {/* <h3>{item.group}</h3> */}
+              <TwoLines title={item.group} />
               <TechComponent arr={item.skills} />
             </div>
           )
