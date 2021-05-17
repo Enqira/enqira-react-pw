@@ -5,10 +5,11 @@
 
 .p-svg-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .p-svg-container p {
-  width: 77%;
+  width: 70%;
 }
 .contact-btn-container {
   display: flex;
