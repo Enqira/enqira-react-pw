@@ -21,8 +21,8 @@ export default function SingleProject({ project }) {
   )
   return (
     <div className="single-project-container">
-      <TwoLines title={name} />
       <div>
+        <TwoLines title={name} />
         <img className="projectImg" src={image2} alt={name} />
         <img className="projectImg" src={image} alt={name} />
       </div>
