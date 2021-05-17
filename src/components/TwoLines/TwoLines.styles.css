@@ -1,21 +1,33 @@
-.rp-horizontal-line {
-  display: flex;
-  width: 80%;
+.container {
+  margin-top: 20px;
 }
 
-.hrTable {
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 1;
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
   width: 100%;
+  height: 1.5px;
 }
-
-.hrTable td {
-  width: 50%;
-  padding: 2px 10px;
-}
-.two-lines-container {
-  display: flex;
-  width: 100%;
-}
-hr {
-  display: flex;
-  width: 30%;
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.7em;
+  color: #febd55;
+  background-color: #454d66;
 }
