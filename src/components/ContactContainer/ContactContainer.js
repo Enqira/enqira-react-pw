@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import emailjs from "emailjs-com"
 // import ParticleEffect from "react-particle-effect-button"
 import TheCloud from "../BackgroundSVG/TheCloud"
@@ -55,7 +55,7 @@ export default function ContactContainer({
       }}
     >
       <div>
-        <div className="card">
+        <div className="card contact-card">
           <div className="x-button" onClick={handleCloseClicked}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -5,6 +5,7 @@
   transition-duration: 2s;
   margin: 0;
 }
+
 .x-button {
   float: right;
   cursor: pointer;
@@ -145,4 +146,21 @@ input.submit-btn:hover {
 }
 .email-input {
   padding-top: 28px;
+}
+@media only screen and (max-width: 920px) {
+  .contact-card {
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .contact-card {
+    width: 93vw;
+  }
+  .contact-human {
+    display: none;
+  }
+  .name-email-container {
+    margin-bottom: 45px;
+    width: 100%;
+  }
 }
