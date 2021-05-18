@@ -9,11 +9,11 @@ export default function OthersComponent() {
       <div className="card">
         <h2>Others</h2>
         <TwoLines title={"Languages"} />
-        <h4>Full Proficiency:</h4>
+        <h4 className="others-h4">Full Proficiency:</h4>
         <div>
           <TechComponent arr={["Arabic", "Spanish", "English"]} />
         </div>
-        <h4>Medium Proficiency:</h4>
+        <h4 className="others-h4">Medium Proficiency:</h4>
         <div>
           <TechComponent arr={["Danish", "French", "Catalan"]} />
         </div>

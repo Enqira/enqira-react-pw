@@ -16,3 +16,25 @@
   justify-content: center;
   margin-bottom: 12px;
 }
+@media only screen and (max-width: 700px) {
+  .coding-background {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .p-svg-container {
+    flex-direction: column-reverse;
+  }
+  .p-svg-container p {
+    width: 100%;
+  }
+  .coding-background {
+    width: 40%;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .coding-background {
+    width: 50%;
+  }
+}
