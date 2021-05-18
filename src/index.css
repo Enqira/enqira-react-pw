@@ -49,6 +49,9 @@ h3 {
   width: 100%;
   border-radius: 5px;
 }
+label {
+  color: rgb(245, 245, 245);
+}
 .tech-item-container span {
   font-size: 13px;
 }
