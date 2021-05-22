@@ -95,6 +95,7 @@ input.submit-btn:hover {
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  color: rgb(48, 48, 48);
 }
 .form-container {
   width: 100%;
