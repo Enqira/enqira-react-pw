@@ -18,30 +18,30 @@ export default function ContactContainer({
     setAlertOpacity(0)
   }
 
-  //   const {
-  //     REACT_APP_EMAIL_SERVICE,
-  //     REACT_APP_EMAIL_TEMPLATE,
-  //     REACT_APP_EMAIL_USER
-  //   } = process.env
+  const {
+    REACT_APP_EMAIL_SERVICE,
+    REACT_APP_EMAIL_TEMPLATE,
+    REACT_APP_EMAIL_USER
+  } = process.env
 
   function sendEmail(e) {
     e.preventDefault()
 
-    // emailjs
-    //   .sendForm(
-    //     REACT_APP_EMAIL_SERVICE,
-    //     REACT_APP_EMAIL_TEMPLATE,
-    //     e.target,
-    //     REACT_APP_EMAIL_USER
-    //   )
-    //   .then(
-    //     result => {
-    //       console.log(result.text)
-    //     },
-    //     error => {
-    //       console.log(error.text)
-    //     }
-    //   )
+    emailjs
+      .sendForm(
+        REACT_APP_EMAIL_SERVICE,
+        REACT_APP_EMAIL_TEMPLATE,
+        e.target,
+        REACT_APP_EMAIL_USER
+      )
+      .then(
+        result => {
+          console.log(result.text)
+        },
+        error => {
+          console.log(error.text)
+        }
+      )
     //   reset email input fields
     e.target.reset()
     setAlertOpacity(1)
@@ -86,11 +86,11 @@ export default function ContactContainer({
                   <div className="name-email-container">
                     <div className="contact-column">
                       <label>Name </label>
-                      <input type="text" name="user_name" />
+                      <input type="text" name="user_name" required />
                     </div>
                     <div className="contact-column email-input">
                       <label>Email </label>
-                      <input type="email" name="user_email" />
+                      <input type="email" name="user_email" required />
                     </div>
                   </div>
                   <TheCloud />
