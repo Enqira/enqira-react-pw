@@ -13,7 +13,7 @@ const arr = [
     image: invitaImg,
     image2: invita2Img,
     description:
-      "Website for sharing meals. Invite your best friends or your family for dinner, you can add reserve or review meals.",
+      "Website for sharing meals. Invite your best friends or your family for dinner, you can add, reserve or review meals.",
     skills: ["MySQL", "express", "ReactJS", "NodeJS"],
     repository: "https://github.com/Enqira/meal-sharing",
     website: "https://invita.herokuapp.com/"
@@ -23,7 +23,7 @@ const arr = [
     image: cloudpackImg,
     image2: cloudpack2Img,
     description:
-      "A fully working system consisting of an app & an admin website to track damaged packages. The app can be used to scan a barcode, add a comment & take pictures of the damaged package, to later visualize that data on the admin wesite, and sent it by inbuit email if needed. ",
+      "A fully working system consisting of an app & an admin panel to track damaged packages. The app can be used to scan a barcode, add a comment & take pictures of the damaged package, to later visualize that data on the admin wesite, and sent it by inbuit email if needed. ",
     skills: [
       "mongoDB",
       "express",

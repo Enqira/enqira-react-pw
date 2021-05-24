@@ -140,7 +140,7 @@ input.submit-btn:hover {
 .form-coder-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -18px;
+  margin-bottom: -20px;
 }
 .name-email-container {
   width: 79%;
