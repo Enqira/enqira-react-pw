@@ -21,12 +21,7 @@ export default function SummaryComponent({
         <h2>Summary</h2>
         <div className="p-svg-container">
           <p>
-            {`Enthusiastic and creative technologist with good computer science
-            fundamentals knowledge & hands-on skills in a wide range of
-            software and tools. I like solving back-end problems as much as
-            creating modern, beautiful and responsive front-end websites. My go
-            to back-end plataform is NodeJS and front-end library is React, but
-            I will be happy to jump in a very short time to any required ones.`}
+            {`Enthusiastic and creative technologist with good fundamental computer science knowledge & hands-on skills in a wide range of  software and tools. I like solving back-end problems as much as creating modern, beautiful and responsive front-end websites. My go to back-end platform is NodeJS and front-end library is React, but I am confident in my ability to pick up new skills in a short time frame.`}
           </p>
           <CodingSVG />
         </div>
