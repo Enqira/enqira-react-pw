@@ -6,8 +6,28 @@ import invitaImg from "../../images/projects/invita-screen1.png"
 import invita2Img from "../../images/projects/invita-screen2.png"
 import cloudpackImg from "../../images/projects/cloudpack-1.png"
 import cloudpack2Img from "../../images/projects/cloudpack-2.png"
+import guideIT1 from "../../images/projects/guide-it-1.png"
+import guideIT2 from "../../images/projects/guide-it-2.png"
 
 const arr = [
+  {
+    name: "Guide-IT",
+    image: guideIT2,
+    image2: guideIT1,
+    description:
+      "Part of HackYourFuture final group project and with collaboration with REDI school, during 7 weeks of work we developed a tool to help newcomers find their professional way in Denmark.",
+    skills: [
+      "MySQL",
+      "express",
+      "ReactJS",
+      "NodeJS",
+      "Storybook",
+      "Figma",
+      "Swagger"
+    ],
+    repository: "https://github.com/HackYourFuture-CPH/Guide-IT",
+    website: "https://guide-it-production.herokuapp.com/"
+  },
   {
     name: "invita",
     image: invitaImg,

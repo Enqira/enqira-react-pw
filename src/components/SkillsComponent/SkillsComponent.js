@@ -12,7 +12,7 @@ const arr = [
       "HTML",
       "CSS",
       "Javascript",
-      "storybook",
+      "Storybook",
       "Cordova Ionic"
     ]
   },
@@ -22,7 +22,7 @@ const arr = [
   },
   {
     group: "Others",
-    skills: ["Figma", "Git", "Adobe Suite"]
+    skills: ["Figma", "Git", "Adobe Suite", "Swagger"]
   }
 ]
 

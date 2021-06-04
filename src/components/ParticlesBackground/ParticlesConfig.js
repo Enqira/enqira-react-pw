@@ -11,8 +11,10 @@ import dockerLogo from "../../images/backend/docker.png"
 import expressLogo from "../../images/backend/express.png"
 import elasticLogo from "../../images/others/elasticsearch.png"
 import firgmaLogo from "../../images/others/figma.png"
-import gitLogo from "../../images/git-logo.png"
+import githubLogo from "../../images/github.png"
 import adobeLogo from "../../images/others/adobe.png"
+import swaggerLogo from "../../images/others/swagger.png"
+import gitLogo from "../../images/others/git.png"
 
 const particlesConfig = {
   fullScreen: { enable: true, zIndex: 1 },
@@ -133,7 +135,17 @@ const particlesConfig = {
           height: 25
         },
         {
+          src: githubLogo,
+          width: 25,
+          height: 25
+        },
+        {
           src: adobeLogo,
+          width: 25,
+          height: 25
+        },
+        {
+          src: swaggerLogo,
           width: 25,
           height: 25
         }
