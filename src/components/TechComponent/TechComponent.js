@@ -16,8 +16,10 @@ import dockerLogo from "../../images/backend/docker.png"
 import expressLogo from "../../images/backend/express.png"
 import elasticLogo from "../../images/others/elasticsearch.png"
 import firgmaLogo from "../../images/others/figma.png"
-import gitLogo from "../../images/git-logo.png"
+import githubLogo from "../../images/github.png"
+import gitLogo from "../../images/others/git.png"
 import adobeLogo from "../../images/others/adobe.png"
+import swaggerLogo from "../../images/others/swagger.png"
 import linkLogo from "../../images/link.png"
 import spanishLogo from "../../images/flags/spanish.png"
 import frenchLogo from "../../images/flags/french.png"
@@ -41,7 +43,7 @@ const data = [
     path: javascriptLogo
   },
   {
-    name: "storybook",
+    name: "Storybook",
     path: storybookLogo
   },
   {
@@ -81,20 +83,24 @@ const data = [
     path: gitLogo
   },
   {
-    name: "website",
+    name: "Website",
     path: linkLogo
   },
   {
-    name: "repository",
-    path: gitLogo
+    name: "Repository",
+    path: githubLogo
   },
   {
     name: "App repository",
-    path: gitLogo
+    path: githubLogo
   },
   {
     name: "express",
     path: expressLogo
+  },
+  {
+    name: "Swagger",
+    path: swaggerLogo
   },
   {
     name: "HackYourFuture.dk",

@@ -29,13 +29,13 @@ export default function SingleProject({ project }) {
       <p>{description}</p>
       <div className="rep-web-links-container">
         <a href={repository} target="_blank" rel="noreferrer">
-          <TechComponent arr={["repository"]} />
+          <TechComponent arr={["Repository"]} />
         </a>
         <a href={repository2} target="_blank" rel="noreferrer">
           {secondRep}
         </a>
         <a href={website} target="_blank" rel="noreferrer">
-          <TechComponent arr={["website"]} />
+          <TechComponent arr={["Website"]} />
         </a>
       </div>
       <div className="project-build-with">
