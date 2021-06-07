@@ -9,7 +9,6 @@ import OthersComponent from "./components/Others/OthersComponent"
 import ContactContainer from "./components/ContactContainer/ContactContainer"
 import JobExperienceComponent from "./components/JobExperience/JobExperienceComponent"
 import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground"
-// import VectorComputer from "./components/BackgroundSVG/VectorComputer"
 
 function App() {
   const [contactStyle, setContactStyle] = useState("none")
@@ -18,8 +17,6 @@ function App() {
   return (
     <div>
       <ParticlesBackground />
-      {/* <VectorComputer /> */}
-      {/* <CodingSVG /> */}
       <div className="App slide-top">
         <HeaderCard
           setContactStyle={setContactStyle}
