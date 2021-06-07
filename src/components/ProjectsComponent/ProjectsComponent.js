@@ -15,7 +15,7 @@ const arr = [
     image: guideIT2,
     image2: guideIT1,
     description:
-      "Part of HackYourFuture final group project and with collaboration with REDI school, during 7 weeks of work we developed a tool to help newcomers find their professional way in Denmark.",
+      "Part of HackYourFuture final group project and in collaboration with REDI school, during 7 weeks of work we developed a tool to help newcomers find their professional way in Denmark.",
     skills: [
       "MySQL",
       "express",
