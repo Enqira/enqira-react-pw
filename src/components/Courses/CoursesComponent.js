@@ -15,13 +15,11 @@ export default function CoursesComponent() {
           <h2>Courses</h2>
           <TwoLines title={"HackYourFuture Coding School"} />
           <p>
-            {`8+ month of intensive study to fully prepare students for a Full
+            {`8+ months of intensive study to fully prepare students for a Full
             Stack Web Developer role using the latest technologies in the web
-            development industry. The curriculum consist of a React, Node, Javascript, HTML, CSS, MySQL and Git
+            development industry. The curriculum consists of React, Node, Javascript, HTML, CSS, MySQL and Git
             modules among others. Students also learn how to work in team,
-             and get prepared for the job market.
-            Futhermore students get mentored by founders and employees of great
-            companies such Elasticsearch and Zendesk.`}
+             and get prepared for the job market.`}
           </p>
           <div>
             <a href={hyf_URL} target="_blank" rel="noreferrer">

@@ -45,7 +45,7 @@ export default function HeaderCard({
     //  add event listener to know when the mouse entered the container
     containerRef.current.addEventListener("mouseenter", e => {
       picRef.current.style.transform =
-        "scaleX(0.9) scaleY(0.9) translateZ(30px)"
+        "scaleX(0.9) scaleY(0.9) translateZ(50px)"
       titleRef.current.style.transform = "translateZ(150px)"
       descriptionRef.current.style.transform = "translateZ(80px)"
       btnRef.current.style.transform = "translateZ(150px)"

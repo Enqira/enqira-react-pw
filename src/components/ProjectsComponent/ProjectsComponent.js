@@ -43,7 +43,7 @@ const arr = [
     image: cloudpackImg,
     image2: cloudpack2Img,
     description:
-      "A fully working system consisting of an app & an admin panel to track damaged packages. The app can be used to scan a barcode, add a comment & take pictures of the damaged package, to later visualize that data on the admin wesite, and sent it by inbuit email if needed. ",
+      "A fully working system consisting of an app & an admin panel to track damaged packages. The app can be used to scan a barcode, add a comment & take pictures of the damaged package, to later visualize that data on the admin panel.",
     skills: [
       "mongoDB",
       "express",

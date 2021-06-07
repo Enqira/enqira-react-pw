@@ -16,11 +16,11 @@ export default function JobExperienceComponent() {
         <TwoLines title={"Brink Transport"} />
         <div>
           <p>
-            Brink transport is a danish transport company. My daily activities
-            at the company changed every day depending of the needs, some of the
-            roles that I had conisted of help plan the route for the drivers in
-            Sjælland, sort goods, deliver packages, drive trucks to mechanics
-            for service or reparation among other things.
+            Brink transport is a Danish transport company. My daily activities
+            at the company changed every day depending on the needs, some of the
+            roles that I had consisted of: help plan the route for the drivers
+            in Sjælland, sort goods, deliver packages, drive trucks to the
+            mechanic for service or reparation, among other things.
           </p>
         </div>
         <TwoLines title={"PcBox/Let's Play"} />
