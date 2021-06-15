@@ -20,7 +20,7 @@ export default function SingleProject({ project }) {
     <div></div>
   )
   return (
-    <div className="single-project-container">
+    <div className="single-project-container" id={name}>
       <div className="title-img-container">
         <TwoLines title={name} />
         <img className="projectImg" src={image2} alt={name} />
