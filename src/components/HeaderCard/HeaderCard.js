@@ -46,7 +46,7 @@ export default function HeaderCard({
     containerRef.current.addEventListener("mouseenter", e => {
       picRef.current.style.transform =
         "scaleX(0.9) scaleY(0.9) translateZ(50px)"
-      titleRef.current.style.transform = "translateZ(150px)"
+      titleRef.current.style.transform = "translateZ(140px)"
       descriptionRef.current.style.transform = "translateZ(80px)"
       btnRef.current.style.transform = "translateZ(150px)"
 
