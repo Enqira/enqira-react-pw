@@ -8,6 +8,7 @@
 body {
   margin: 0;
   background-color: #00021d;
+  /* background-color: #000000; */
   font-family: "Proza Libre", sans-serif;
 }
 
@@ -18,7 +19,8 @@ body {
   margin: 10px;
   border-radius: 10px;
   z-index: 2;
-  background-color: #454d66;
+  background-color: rgba(69, 77, 102, 0.97);
+  /* background-color: #454d66; */
   padding-bottom: 25px;
   max-width: 100vw;
 }

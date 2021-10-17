@@ -1,12 +1,18 @@
-import React from "react"
-import "./JobExperienceComponent.css"
-import TwoLines from "../TwoLines/TwoLinesComponent"
+import React from "react";
+import "./JobExperienceComponent.css";
+import TwoLines from "../TwoLines/TwoLinesComponent";
 
 export default function JobExperienceComponent() {
   return (
     <dir className="job-experience-container">
       <div className="card">
         <h2>Job Experience</h2>
+        <TwoLines title={"HeyWay.com (current)"} />
+        <div>
+          <p>
+            {`Part time full stack developer working in a new project using React and Node.js, and parcially making small changes to the already existing website and small app or adding new small features. Website is built with Webflow, app uses Vue.js and laravel backend.`}
+          </p>
+        </div>
         <TwoLines title={"Fixpress"} />
         <div>
           <p>
@@ -34,5 +40,5 @@ PcBox/Let's Play is an Esport center with 110 robust gaming computers and 8 Play
         </div>
       </div>
     </dir>
-  )
+  );
 }
