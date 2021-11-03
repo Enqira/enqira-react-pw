@@ -3,6 +3,8 @@ import "./SingleProject.css";
 import TechComponent from "../TechComponent/TechComponent";
 import TwoLines from "../TwoLines/TwoLinesComponent";
 import ReactPlayer from "react-player/youtube";
+import ReactModal from "react-modal";
+import { useModal } from "react-modal-hook";
 
 export default function SingleProject({ project }) {
   const {
@@ -21,18 +23,42 @@ export default function SingleProject({ project }) {
   ) : (
     <div></div>
   );
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      backgroundColor: "#000",
+    },
+  };
+  const [showModal, hideModal] = useModal(() => (
+    <ReactModal isOpen style={customStyles}>
+      <span onClick={hideModal} className="close-modal">
+        Close
+      </span>
+      <ReactPlayer
+        width={"90vw"}
+        height={"80vh"}
+        url="https://youtu.be/uz0RoVNloPA"
+      />
+    </ReactModal>
+  ));
   return (
     <div className="single-project-container" id={name}>
       <div className="title-img-container">
         <TwoLines title={name} />
         {hasVideo ? (
           <div className="images-container">
-            <ReactPlayer
-              className="projectImg"
-              height={"inherit"}
-              url="https://youtu.be/uz0RoVNloPA"
-            />{" "}
-            <img className="projectImg" src={image} alt={name} />
+            <img
+              className="projectImg video-thumbnail"
+              src={image}
+              alt={name}
+              onClick={showModal}
+            />
+            <img className="projectImg" src={image2} alt={name} />
           </div>
         ) : (
           <div>

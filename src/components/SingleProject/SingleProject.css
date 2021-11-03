@@ -21,11 +21,17 @@
   background-color: #fff;
   margin: 1%;
 }
-.rep-web-links-container {
-  display: flex;
+.close-modal {
+  cursor: pointer;
+}
+.video-thumbnail {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {
+  .images-container {
+    flex-direction: column;
+  }
   .title-img-container {
     display: flex;
     flex-direction: column;

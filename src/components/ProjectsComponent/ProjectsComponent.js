@@ -8,12 +8,13 @@ import cloudpackImg from "../../images/projects/cloudpack-1.png";
 import cloudpack2Img from "../../images/projects/cloudpack-2.png";
 import guideIT1 from "../../images/projects/guide-it-1.png";
 import guideIT2 from "../../images/projects/guide-it-2.png";
+import videoThumbnail from "../../images/projects/video-tha.jpg";
 
 const arr = [
   {
     name: "Cloudpack",
     hasVideo: true,
-    image: cloudpackImg,
+    image: videoThumbnail,
     image2: cloudpack2Img,
     description:
       "A system consisting of an app & an admin panel to track damaged packages. The app can be used to scan a barcode, add a comment & take pictures of the damaged package, to later visualize that data on the admin panel.",
