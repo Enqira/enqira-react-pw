@@ -1,157 +1,162 @@
-import React, { useRef } from "react"
-import { v4 as uuidv4 } from "uuid"
-import "./TechComponent.css"
-import useOnScreen from "../useOnScreen"
+import React, { useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
+import "./TechComponent.css";
+import useOnScreen from "../useOnScreen";
 
-import cssLogo from "../../images/frontend/css.png"
-import htmlLogo from "../../images/frontend/html.png"
-import javascriptLogo from "../../images/frontend/javascript.png"
-import reactLogo from "../../images/frontend/react.png"
-import storybookLogo from "../../images/frontend/storybook.png"
-import cordovaLogo from "../../images/frontend/cordova.png"
-import nodeLogo from "../../images/backend/node.png"
-import mysqlLogo from "../../images/backend/mysql.png"
-import mongoDBLogo from "../../images/backend/mongodb.png"
-import dockerLogo from "../../images/backend/docker.png"
-import expressLogo from "../../images/backend/express.png"
-import elasticLogo from "../../images/others/elasticsearch.png"
-import firgmaLogo from "../../images/others/figma.png"
-import githubLogo from "../../images/github.png"
-import gitLogo from "../../images/others/git.png"
-import adobeLogo from "../../images/others/adobe.png"
-import swaggerLogo from "../../images/others/swagger.png"
-import linkLogo from "../../images/link.png"
-import spanishLogo from "../../images/flags/spanish.png"
-import frenchLogo from "../../images/flags/french.png"
-import arabicLogo from "../../images/flags/arabic.png"
-import danishLogo from "../../images/flags/danish.png"
-import englishLogo from "../../images/flags/english.png"
-import catalanLogo from "../../images/flags/catalan.png"
+import cssLogo from "../../images/frontend/css.png";
+import htmlLogo from "../../images/frontend/html.png";
+import javascriptLogo from "../../images/frontend/javascript.png";
+import reactLogo from "../../images/frontend/react.png";
+import storybookLogo from "../../images/frontend/storybook.png";
+import cordovaLogo from "../../images/frontend/cordova.png";
+import nodeLogo from "../../images/backend/node.png";
+import mysqlLogo from "../../images/backend/mysql.png";
+import mongoDBLogo from "../../images/backend/mongodb.png";
+import dockerLogo from "../../images/backend/docker.png";
+import expressLogo from "../../images/backend/express.png";
+import linuxLogo from "../../images/backend/linux.png";
+import elasticLogo from "../../images/others/elasticsearch.png";
+import firgmaLogo from "../../images/others/figma.png";
+import githubLogo from "../../images/github.png";
+import gitLogo from "../../images/others/git.png";
+import adobeLogo from "../../images/others/adobe.png";
+import swaggerLogo from "../../images/others/swagger.png";
+import linkLogo from "../../images/link.png";
+import spanishLogo from "../../images/flags/spanish.png";
+import frenchLogo from "../../images/flags/french.png";
+import arabicLogo from "../../images/flags/arabic.png";
+import danishLogo from "../../images/flags/danish.png";
+import englishLogo from "../../images/flags/english.png";
+import catalanLogo from "../../images/flags/catalan.png";
 
 const data = [
   { name: "ReactJS", path: reactLogo },
   {
     name: "HTML",
-    path: htmlLogo
+    path: htmlLogo,
   },
   {
     name: "CSS",
-    path: cssLogo
+    path: cssLogo,
   },
   {
     name: "Javascript",
-    path: javascriptLogo
+    path: javascriptLogo,
   },
   {
     name: "Storybook",
-    path: storybookLogo
+    path: storybookLogo,
   },
   {
     name: "Cordova Ionic",
-    path: cordovaLogo
+    path: cordovaLogo,
   },
   {
     name: "NodeJS",
-    path: nodeLogo
+    path: nodeLogo,
   },
   {
     name: "MySQL",
-    path: mysqlLogo
+    path: mysqlLogo,
   },
   {
     name: "mongoDB",
-    path: mongoDBLogo
+    path: mongoDBLogo,
   },
   {
     name: "Docker",
-    path: dockerLogo
+    path: dockerLogo,
   },
   {
     name: "elasticsearch",
-    path: elasticLogo
+    path: elasticLogo,
   },
   {
     name: "Figma",
-    path: firgmaLogo
+    path: firgmaLogo,
   },
   {
     name: "Adobe Suite",
-    path: adobeLogo
+    path: adobeLogo,
   },
   {
     name: "Git",
-    path: gitLogo
+    path: gitLogo,
   },
   {
     name: "Website",
-    path: linkLogo
+    path: linkLogo,
   },
   {
     name: "Repository",
-    path: githubLogo
+    path: githubLogo,
   },
   {
     name: "App repository",
-    path: githubLogo
+    path: githubLogo,
   },
   {
     name: "express",
-    path: expressLogo
+    path: expressLogo,
+  },
+  {
+    name: "Linux",
+    path: linuxLogo,
   },
   {
     name: "Swagger",
-    path: swaggerLogo
+    path: swaggerLogo,
   },
   {
     name: "HackYourFuture.dk",
-    path: linkLogo
+    path: linkLogo,
   },
   {
     name: "See certificate",
-    path: linkLogo
+    path: linkLogo,
   },
   {
     name: "Spanish",
-    path: spanishLogo
+    path: spanishLogo,
   },
   {
     name: "French",
-    path: frenchLogo
+    path: frenchLogo,
   },
   {
     name: "English",
-    path: englishLogo
+    path: englishLogo,
   },
   {
     name: "Arabic",
-    path: arabicLogo
+    path: arabicLogo,
   },
   {
     name: "Catalan",
-    path: catalanLogo
+    path: catalanLogo,
   },
   {
     name: "Danish",
-    path: danishLogo
-  }
-]
+    path: danishLogo,
+  },
+];
 
 export default function TechComponent({ arr }) {
-  const ref = useRef(null)
-  const newArr = arr.map(item => data.filter(skill => skill.name === item))
+  const ref = useRef(null);
+  const newArr = arr.map((item) => data.filter((skill) => skill.name === item));
 
   return (
     <div className="tech-group" style={useOnScreen(ref)} ref={ref}>
-      {newArr.map(item =>
-        item.map(skill => {
+      {newArr.map((item) =>
+        item.map((skill) => {
           return (
             <div className="tech-item-container" key={uuidv4()}>
               <img src={skill.path} alt={skill.name} className="techs-img" />
               <span>{skill.name}</span>
             </div>
-          )
+          );
         })
       )}
     </div>
-  )
+  );
 }

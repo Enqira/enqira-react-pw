@@ -11,6 +11,9 @@
 .project-build-with h4 {
   margin: 0.5rem 0;
 }
+.images-container {
+  display: flex;
+}
 .projectImg {
   width: 48%;
   padding: 3px;
@@ -21,6 +24,7 @@
 .rep-web-links-container {
   display: flex;
 }
+
 @media only screen and (max-width: 500px) {
   .title-img-container {
     display: flex;

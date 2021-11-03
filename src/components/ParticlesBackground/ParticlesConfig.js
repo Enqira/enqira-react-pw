@@ -142,7 +142,7 @@ const particlesConfig = {
       consent: true,
       distance: 50,
       enable: true,
-      width: 2000,
+      width: 4000,
     },
     move: {
       bounce: true,

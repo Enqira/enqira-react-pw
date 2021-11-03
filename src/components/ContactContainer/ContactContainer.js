@@ -1,31 +1,31 @@
-import React, { useState } from "react"
-import emailjs from "emailjs-com"
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 // import ParticleEffect from "react-particle-effect-button"
-import TheCloud from "../BackgroundSVG/TheCloud"
+import TheCloud from "../BackgroundSVG/TheCloud";
 
-import "./ContactContainer.css"
+import "./ContactContainer.css";
 
 export default function ContactContainer({
   contactStyle,
   setContactStyle,
-  contactRef
+  contactRef,
 }) {
-  const [alertOpacity, setAlertOpacity] = useState(0)
+  const [alertOpacity, setAlertOpacity] = useState(0);
 
   //   when the popup close button clicked from popup
   const handleCloseClicked = () => {
-    setContactStyle("none")
-    setAlertOpacity(0)
-  }
+    setContactStyle("none");
+    setAlertOpacity(0);
+  };
 
   const {
     REACT_APP_EMAIL_SERVICE,
     REACT_APP_EMAIL_TEMPLATE,
-    REACT_APP_EMAIL_USER
-  } = process.env
+    REACT_APP_EMAIL_USER,
+  } = process.env;
 
   function sendEmail(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     emailjs
       .sendForm(
@@ -35,23 +35,23 @@ export default function ContactContainer({
         REACT_APP_EMAIL_USER
       )
       .then(
-        result => {
-          console.log(result.text)
+        (result) => {
+          console.log(result.text);
         },
-        error => {
-          console.log(error.text)
+        (error) => {
+          console.log(error.text);
         }
-      )
+      );
     //   reset email input fields
-    e.target.reset()
-    setAlertOpacity(1)
+    e.target.reset();
+    setAlertOpacity(1);
   }
   return (
     <div
       className="contact-container scale-up-ver-top"
       style={{
         display: contactStyle,
-        transition: "all 1s ease"
+        transition: "all 1s ease",
       }}
     >
       <div>
@@ -113,5 +113,5 @@ export default function ContactContainer({
         </button>
       </div>
     </div>
-  )
+  );
 }

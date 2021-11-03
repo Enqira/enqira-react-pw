@@ -1,7 +1,8 @@
-import React from "react"
-import "./SingleProject.css"
-import TechComponent from "../TechComponent/TechComponent"
-import TwoLines from "../TwoLines/TwoLinesComponent"
+import React from "react";
+import "./SingleProject.css";
+import TechComponent from "../TechComponent/TechComponent";
+import TwoLines from "../TwoLines/TwoLinesComponent";
+import ReactPlayer from "react-player/youtube";
 
 export default function SingleProject({ project }) {
   const {
@@ -12,19 +13,33 @@ export default function SingleProject({ project }) {
     image2,
     repository,
     website,
-    repository2
-  } = project
+    repository2,
+    hasVideo,
+  } = project;
   const secondRep = repository2 ? (
     <TechComponent arr={["App repository"]} />
   ) : (
     <div></div>
-  )
+  );
   return (
     <div className="single-project-container" id={name}>
       <div className="title-img-container">
         <TwoLines title={name} />
-        <img className="projectImg" src={image2} alt={name} />
-        <img className="projectImg" src={image} alt={name} />
+        {hasVideo ? (
+          <div className="images-container">
+            <ReactPlayer
+              className="projectImg"
+              height={"inherit"}
+              url="https://youtu.be/uz0RoVNloPA"
+            />{" "}
+            <img className="projectImg" src={image} alt={name} />
+          </div>
+        ) : (
+          <div>
+            <img className="projectImg" src={image2} alt={name} />
+            <img className="projectImg" src={image} alt={name} />
+          </div>
+        )}
       </div>
       <p>{description}</p>
       <div className="rep-web-links-container">
@@ -45,5 +60,5 @@ export default function SingleProject({ project }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
