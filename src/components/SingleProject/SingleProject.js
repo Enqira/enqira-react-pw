@@ -5,6 +5,7 @@ import TwoLines from "../TwoLines/TwoLinesComponent";
 import ReactPlayer from "react-player/youtube";
 import ReactModal from "react-modal";
 import { useModal } from "react-modal-hook";
+import PlayButton from "./PlayButton";
 
 export default function SingleProject({ project }) {
   const {
@@ -35,7 +36,7 @@ export default function SingleProject({ project }) {
     },
   };
   const [showModal, hideModal] = useModal(() => (
-    <ReactModal isOpen style={customStyles}>
+    <ReactModal isOpen style={customStyles} ariaHideApp={false}>
       <span onClick={hideModal} className="close-modal">
         Close
       </span>
@@ -52,12 +53,17 @@ export default function SingleProject({ project }) {
         <TwoLines title={name} />
         {hasVideo ? (
           <div className="images-container">
-            <img
-              className="projectImg video-thumbnail"
-              src={image}
-              alt={name}
-              onClick={showModal}
-            />
+            <div className="position-relative-div">
+              <PlayButton showModal={showModal} />
+              <div className="video-title-container">
+                <p>2 min video introduction.</p>
+              </div>
+              <img
+                className="projectImg video-thumbnail"
+                src={image}
+                alt={name}
+              />
+            </div>
             <img className="projectImg" src={image2} alt={name} />
           </div>
         ) : (

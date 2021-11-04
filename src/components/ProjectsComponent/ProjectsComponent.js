@@ -15,7 +15,7 @@ const arr = [
     name: "Cloudpack",
     hasVideo: true,
     image: videoThumbnail,
-    image2: cloudpack2Img,
+    image2: cloudpackImg,
     description:
       "A system consisting of an app & an admin panel to track damaged packages. The app can be used to scan a barcode, add a comment & take pictures of the damaged package, to later visualize that data on the admin panel.",
     skills: [

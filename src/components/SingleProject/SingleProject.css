@@ -25,7 +25,37 @@
   cursor: pointer;
 }
 .video-thumbnail {
+  width: 98%;
+}
+.position-relative-div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feather-play-circle {
+  position: absolute;
   cursor: pointer;
+  z-index: 10;
+}
+.feather-play-circle:hover {
+  stroke: #fff;
+  width: 57px;
+  height: 57px;
+}
+
+.video-title-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+}
+.video-title-container p {
+  padding: 5px 15px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: rgb(48 152 117);
 }
 
 @media only screen and (max-width: 500px) {
