@@ -12,8 +12,9 @@ const arr = [
       "HTML",
       "CSS",
       "Javascript",
-      "Storybook",
+      "Redux",
       "Cordova Ionic",
+      "Storybook",
     ],
   },
   {
@@ -24,12 +25,13 @@ const arr = [
       "express",
       "NodeJS",
       "elasticsearch",
+      "Sequelize",
       "Docker",
     ],
   },
   {
     group: "Others",
-    skills: ["Figma", "Git", "Linux", "Adobe Suite", "Swagger"],
+    skills: ["Webflow", "Figma", "Git", "Swagger", "Adobe Suite", "Linux"],
   },
 ];
 

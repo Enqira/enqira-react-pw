@@ -9,18 +9,21 @@ import javascriptLogo from "../../images/frontend/javascript.png";
 import reactLogo from "../../images/frontend/react.png";
 import storybookLogo from "../../images/frontend/storybook.png";
 import cordovaLogo from "../../images/frontend/cordova.png";
+import reduxLogo from "../../images/frontend/redux.png";
 import nodeLogo from "../../images/backend/node.png";
 import mysqlLogo from "../../images/backend/mysql.png";
 import mongoDBLogo from "../../images/backend/mongodb.png";
 import dockerLogo from "../../images/backend/docker.png";
 import expressLogo from "../../images/backend/express.png";
 import linuxLogo from "../../images/backend/linux.png";
+import sequelizeLogo from "../../images/backend/sequelize.png";
 import elasticLogo from "../../images/others/elasticsearch.png";
 import firgmaLogo from "../../images/others/figma.png";
 import githubLogo from "../../images/github.png";
 import gitLogo from "../../images/others/git.png";
 import adobeLogo from "../../images/others/adobe.png";
 import swaggerLogo from "../../images/others/swagger.png";
+import webflowLogo from "../../images/others/webflow.png";
 import linkLogo from "../../images/link.png";
 import spanishLogo from "../../images/flags/spanish.png";
 import frenchLogo from "../../images/flags/french.png";
@@ -34,6 +37,10 @@ const data = [
   {
     name: "HTML",
     path: htmlLogo,
+  },
+  {
+    name: "Webflow",
+    path: webflowLogo,
   },
   {
     name: "CSS",
@@ -50,6 +57,10 @@ const data = [
   {
     name: "Cordova Ionic",
     path: cordovaLogo,
+  },
+  {
+    name: "Redux",
+    path: reduxLogo,
   },
   {
     name: "NodeJS",
@@ -70,6 +81,10 @@ const data = [
   {
     name: "elasticsearch",
     path: elasticLogo,
+  },
+  {
+    name: "Sequelize",
+    path: sequelizeLogo,
   },
   {
     name: "Figma",

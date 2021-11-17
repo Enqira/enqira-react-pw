@@ -15,117 +15,9 @@ import githubLogo from "../../images/github.png";
 import adobeLogo from "../../images/others/adobe.png";
 import swaggerLogo from "../../images/others/swagger.png";
 import gitLogo from "../../images/others/git.png";
-
-// const particlesConfig = {
-//   particles: {
-//     number: {
-//       value: 40,
-//       density: {
-//         enable: true,
-//         value_area: 1000,
-//       },
-//     },
-//     color: {
-//       value: "#fff",
-//     },
-//     shape: {
-//       type: "circle",
-//       stroke: {
-//         width: 0,
-//         color: "#000000",
-//       },
-//       polygon: {
-//         nb_sides: 5,
-//       },
-//       image: {
-//         src: "img/github.svg",
-//         width: 100,
-//         height: 100,
-//       },
-//     },
-//     opacity: {
-//       value: 0.3,
-//       random: false,
-//       anim: {
-//         enable: false,
-//         speed: 1,
-//         opacity_min: 0.1,
-//         sync: false,
-//       },
-//     },
-//     size: {
-//       value: 3,
-//       random: true,
-//       anim: {
-//         enable: false,
-//         speed: 40,
-//         size_min: 0.1,
-//         sync: false,
-//       },
-//     },
-//     line_linked: {
-//       enable: true,
-//       distance: 250,
-//       color: "#ffffff",
-//       opacity: 0.4,
-//       width: 1,
-//     },
-//     move: {
-//       enable: true,
-//       speed: 0.15,
-//       direction: "none",
-//       random: false,
-//       straight: false,
-//       out_mode: "out",
-//       bounce: false,
-//       attract: {
-//         enable: false,
-//         rotateX: 600,
-//         rotateY: 1200,
-//       },
-//     },
-//   },
-//   interactivity: {
-//     detect_on: "canvas",
-//     events: {
-//       onhover: {
-//         enable: false,
-//         mode: "repulse",
-//       },
-//       onclick: {
-//         enable: false,
-//         mode: "push",
-//       },
-//       resize: true,
-//     },
-//     modes: {
-//       grab: {
-//         distance: 400,
-//         line_linked: {
-//           opacity: 1,
-//         },
-//       },
-//       bubble: {
-//         distance: 400,
-//         size: 40,
-//         duration: 2,
-//         opacity: 8,
-//         speed: 3,
-//       },
-//       repulse: {
-//         distance: 800,
-//         duration: 0.4,
-//       },
-//       push: {
-//         particles_nb: 4,
-//       },
-//       remove: {
-//         particles_nb: 2,
-//       },
-//     },
-//   },
-// };
-// export default particlesConfig;
+import sequelizeLogo from "../../images/backend/sequelize.png";
+import reduxLogo from "../../images/frontend/redux.png";
+import webflowLogo from "../../images/others/webflow.png";
 
 const particlesConfig = {
   fullScreen: { enable: true, zIndex: 1 },
@@ -140,31 +32,33 @@ const particlesConfig = {
       blink: false,
       color: "#ffffff",
       consent: true,
-      distance: 50,
-      enable: true,
-      width: 4000,
+      distance: 300,
+      enable: false,
+      width: 1,
     },
+
     move: {
       bounce: true,
       enable: true,
       outMode: "out",
-      random: true,
-      speed: 0.1,
-      straight: false,
+      random: false,
+      speed: 0.3,
+      straight: true,
+      direction: "bottom",
     },
-    number: { density: { enable: true, area: 800 }, limit: 0, value: 30 },
+    number: { density: { enable: true, area: 800 }, limit: 0, value: 18 },
     opacity: {
-      value: 0.75,
+      value: 1,
       random: false,
       anim: {
         enable: false,
       },
     },
     rotate: {
-      animation: { enable: false, speed: 0.1, sync: false },
+      animation: { enable: true, speed: 1.5, sync: false },
       direction: "random",
       random: true,
-      value: 0,
+      value: 1,
     },
     shape: {
       character: {
@@ -174,6 +68,108 @@ const particlesConfig = {
         value: "*",
         weight: "400",
       },
+      image: [
+        {
+          src: webflowLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: reduxLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: cssLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: sequelizeLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: htmlLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: javascriptLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: reactLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: storybookLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: cordovaLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: nodeLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: mysqlLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: mongoDBLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: dockerLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: expressLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: elasticLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: firgmaLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: gitLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: githubLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: adobeLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: swaggerLogo,
+          width: 32,
+          height: 32,
+        },
+      ],
       polygon: { sides: 5 },
       stroke: { color: "#000000", width: 0 },
       type: "image",
@@ -181,15 +177,82 @@ const particlesConfig = {
 
     size: {
       animation: {
-        enable: false,
-        minimumValue: 5,
-        speed: 5,
+        enable: true,
+        minimumValue: 15,
+        speed: 1,
         sync: false,
       },
       random: false,
-      value: 13,
+      value: 20,
     },
   },
 };
 
 export default particlesConfig;
+
+// const particlesConfig = {
+//   fullScreen: { enable: true, zIndex: 1 },
+//   detectRetina: true,
+//   fpsLimit: 60,
+//   interactivity: {
+//     detectsOn: "canvas",
+//   },
+//   particles: {
+//     color: { value: "#ffffff" },
+//     lineLinked: {
+//       blink: false,
+//       color: "#ffffff",
+//       consent: true,
+//       distance: 50,
+//       enable: true,
+//       width: 4000,
+//     },
+//     move: {
+//       bounce: true,
+//       enable: true,
+//       outMode: "out",
+//       random: true,
+//       speed: 0.1,
+//       straight: false,
+//     },
+//     number: { density: { enable: true, area: 800 }, limit: 0, value: 30 },
+//     opacity: {
+//       value: 0.75,
+//       random: false,
+//       anim: {
+//         enable: false,
+//       },
+//     },
+//     rotate: {
+//       animation: { enable: false, speed: 0.1, sync: false },
+//       direction: "random",
+//       random: true,
+//       value: 0,
+//     },
+//     shape: {
+//       character: {
+//         fill: false,
+//         font: "Verdana",
+//         style: "",
+//         value: "*",
+//         weight: "400",
+//       },
+//       polygon: { sides: 5 },
+//       stroke: { color: "#000000", width: 0 },
+//       type: "image",
+//     },
+
+//     size: {
+//       animation: {
+//         enable: false,
+//         minimumValue: 5,
+//         speed: 5,
+//         sync: false,
+//       },
+//       random: false,
+//       value: 13,
+//     },
+//   },
+// };
+
+// export default particlesConfig;

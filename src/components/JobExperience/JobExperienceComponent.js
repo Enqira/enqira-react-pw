@@ -7,7 +7,15 @@ export default function JobExperienceComponent() {
     <dir className="job-experience-container">
       <div className="card">
         <h2>Job Experience</h2>
-        <TwoLines title={"HeyWay.com (current)"} />
+        <TwoLines title={"Aarhus University"} />
+        <div>
+          <p>
+            {`Freelance job developing new features for a mock social media website tool to be used for the ERC-funded research project STANDBY, “Standing by: Pro-social Bystander Reactions to Online Political Research”.
+The tool is buit with: NodeJS, ReactJS, Mysql, Redux, Sequelize…
+Current contract will terminate at the end of this year 2021.`}
+          </p>
+        </div>
+        <TwoLines title={"HeyWay.com"} />
         <div>
           <p>
             {`Part time full stack developer working in a new project using React and Node.js, and parcially making small changes to the already existing website and small app or adding new small features. Website is built with Webflow, app uses Vue.js and laravel backend.`}
@@ -34,8 +42,7 @@ export default function JobExperienceComponent() {
           <p>
             {`
 PcBox/Let's Play is an Esport center with 110 robust gaming computers and 8 PlayStations.
- My role consisted of helping build and maintain the center computers, install and patch games,
-  and restock goods.`}
+ My role consisted of helping build and maintain the center computers, install and patch games.`}
           </p>
         </div>
       </div>
