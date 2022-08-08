@@ -67,8 +67,8 @@ export default function ProjectsComponent() {
   return (
     <div className="projects-container">
       <div className="projects-card card">
-        <h2>Projects</h2>
-        <p>
+        <h3>Projects</h3>
+        <p className="projects-warning">
           Note: The porpuse of these projects was to put in practice what I was
           learning, and I have improved my coding skills since then!
         </p>

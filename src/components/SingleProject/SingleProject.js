@@ -64,7 +64,7 @@ export default function SingleProject({ project }) {
                 alt={name}
               />
             </div>
-            <img className="projectImg" src={image2} alt={name} />
+            <img className="projectImg projectImgVideo" src={image2} alt={name} />
           </div>
         ) : (
           <div>

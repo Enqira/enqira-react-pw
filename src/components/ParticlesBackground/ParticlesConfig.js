@@ -42,7 +42,7 @@ const particlesConfig = {
       enable: true,
       outMode: "out",
       random: false,
-      speed: 0.3,
+      speed: 0.6,
       straight: true,
       direction: "bottom",
     },
@@ -55,7 +55,7 @@ const particlesConfig = {
       },
     },
     rotate: {
-      animation: { enable: true, speed: 1.5, sync: false },
+      animation: { enable: true, speed: 3, sync: false },
       direction: "random",
       random: true,
       value: 1,

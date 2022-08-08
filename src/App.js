@@ -9,6 +9,7 @@ import OthersComponent from "./components/Others/OthersComponent";
 import ContactContainer from "./components/ContactContainer/ContactContainer";
 import JobExperienceComponent from "./components/JobExperience/JobExperienceComponent";
 import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
+import Granim from './components/Granim/Granim.js'
 
 function App() {
   const [contactStyle, setContactStyle] = useState("none");
@@ -17,6 +18,7 @@ function App() {
   return (
     <div>
       <ParticlesBackground />
+      <Granim />
       <div className="App slide-top">
         <HeaderCard
           setContactStyle={setContactStyle}

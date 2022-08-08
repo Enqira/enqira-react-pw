@@ -6,45 +6,58 @@ export default function JobExperienceComponent() {
   return (
     <dir className="job-experience-container">
       <div className="card">
-        <h2>Job Experience</h2>
-        <TwoLines title={"Aarhus University"} />
+        <h3>Job Experience</h3>
+
+        <TwoLines title={"SureSMS"} />
         <div>
           <p>
-            {`Freelance job developing new features for a mock social media website tool to be used for the ERC-funded research project STANDBY, “Standing by: Pro-social Bystander Reactions to Online Political Research”.
-The tool is buit with: NodeJS, ReactJS, Mysql, Redux, Sequelize…
-Current contract will terminate at the end of this year 2021.`}
+            SureSMS is a professional SMS Gateway, my main role is to integrate their system with third party platforms/systems.
           </p>
+          <p>Some of the integrations that I built:</p>
+          <ul>
+            <li>Azure Active Directory (set of services that connect users with the network resources they need to get their work done)</li>
+            <li>Zapier (a workflow automation system)</li>
+            <li>ActiveCampaign (a CRM and automation platform)</li>
+          </ul>
         </div>
+        <TwoLines title={"Aarhus University"} />
+        <div>
+        </div>
+        {/* <p>
+            {`Freelance job developing new features for a mock social media website tool to be used for the ERC-funded research project STANDBY, “Standing by: Pro-social Bystander Reactions to Online Political Research”.
+            The tool is buit with: NodeJS, ReactJS, Mysql, Redux, Sequelize…
+            Current contract will terminate at the end of this year 2021.`}
+          </p> */}
+        <h4>Freelancer Full Stack Developer</h4>
+        <p>Project: Mock Social Media Website Tool</p>
+
+        <p>Responsabilities:</p>
+        <ul>
+          <li>Development of additional features for the mock Twitter and Facebook:
+            <ul>
+              <li>Implemented second level comments and replies.</li>
+              <li>Developed feature that enables researcher to prespecify comments and replies (including likes, and other kinds of reactions towards these).</li>
+              <li>Implemented likes and reactions functionality for comments and replies.</li>
+              <li>Implementation of a report functionality for posts, comments and replies.</li>
+              <li>Implementation of the ability to upload profile pictures and display them.</li>
+            </ul>
+          </li>
+          <li>Changed the appearance of the mock Twitter and Facebook timelines to more closely resemble the look of real ones.</li>
+        </ul>
         <TwoLines title={"HeyWay.com"} />
         <div>
           <p>
-            {`Part time full stack developer working in a new project using React and Node.js, and parcially making small changes to the already existing website and small app or adding new small features. Website is built with Webflow, app uses Vue.js and laravel backend.`}
+            Part time full stack developer.
+            <p>Responsibilities: </p>
+            <ul>
+              <li>Assess Heyway team on best IT solutions.</li>
+              <li>Assess Heyway team on best IT solutions.</li>
+              <li>Integrate and automate operations.</li>
+              <li>Create a new theory test web application for students with ReactJS.</li>
+            </ul>
           </p>
         </div>
-        <TwoLines title={"Fixpress"} />
-        <div>
-          <p>
-            {`Fixpress was a small computer & mobile repair shop. My role was to repair electronics and attend to clients.`}
-          </p>
-        </div>
-        <TwoLines title={"Brink Transport"} />
-        <div>
-          <p>
-            Brink transport is a Danish transport company. My daily activities
-            at the company changed every day depending on the needs, some of the
-            roles that I had consisted of: help plan the route for the drivers
-            in Sjælland, sort goods, deliver packages, drive trucks to the
-            mechanic for service or reparation, among other things.
-          </p>
-        </div>
-        <TwoLines title={"PcBox/Let's Play"} />
-        <div>
-          <p>
-            {`
-PcBox/Let's Play is an Esport center with 110 robust gaming computers and 8 PlayStations.
- My role consisted of helping build and maintain the center computers, install and patch games.`}
-          </p>
-        </div>
+
       </div>
     </dir>
   );
