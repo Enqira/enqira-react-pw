@@ -5,6 +5,7 @@
   justify-content: center;
   max-width: 1000px;
   perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
 .header-card {
   transform-style: preserve-3d;
@@ -14,10 +15,10 @@
   align-items: center;
   flex-direction: column;
 }
-.header-circle {
+.header-circle, .header-circle2 {
   width: 160px;
   height: 160px;
-  background-color: #fdfdfd27;
+  background-color: #fdfdfd1c;
   position: absolute;
   border-radius: 50%;
   z-index: 1;
@@ -28,16 +29,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
 .profile-img {
-  max-width: 12.5rem;
+  max-width: 10rem;
   z-index: 2;
   border-radius: 50%;
   transition: all 0.3s ease-out;
-  transform: scaleY(0.8) scaleX(0.8);
 }
 .header-info {
   text-align: center;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
 .header-info h1 {
   transition: all 0.3s ease-out;

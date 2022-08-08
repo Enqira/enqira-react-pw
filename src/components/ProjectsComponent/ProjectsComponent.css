@@ -2,6 +2,13 @@
   display: flex;
   justify-content: center;
 }
+
 .project-img {
   width: 60%;
+}
+
+.projects-warning {
+  padding: 14px;
+  background-color: #ff000063;
+  border-radius: 6px;
 }

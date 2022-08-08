@@ -7,7 +7,7 @@ export default function OthersComponent() {
   return (
     <div className="others-container">
       <div className="card">
-        <h2>Others</h2>
+        <h3>Others</h3>
         <TwoLines title={"Languages"} />
         <div>
           <TechComponent

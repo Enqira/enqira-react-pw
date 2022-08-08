@@ -12,7 +12,7 @@ export default function CoursesComponent() {
     <dir className="courses-container">
       <div className="card">
         <div>
-          <h2>Courses</h2>
+          <h3>Courses</h3>
           <TwoLines title={"HackYourFuture Coding School"} />
           <p>
             {`8+ months of intensive study to fully prepare students for a Full

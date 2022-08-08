@@ -18,7 +18,7 @@ export default function SummaryComponent({
   return (
     <div className="summary-container">
       <div className="summary-card card">
-        <h2>Summary</h2>
+        <h3>Summary</h3>
         <div className="p-svg-container">
           <p>
             {`Enthusiastic and creative technologist with good fundamental computer science knowledge & hands-on skills in a wide range of  software and tools. I like solving back-end problems as much as creating modern, beautiful and responsive front-end websites. My go to back-end platform is NodeJS and front-end library is React, but I am confident in my ability to pick up new skills in a short time frame.`}

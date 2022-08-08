@@ -39,7 +39,7 @@ export default function SkillsComponent() {
   return (
     <div className="skills-container">
       <div className="card">
-        <h2>Skills</h2>
+        <h3>Skills</h3>
         {arr.map((item) => {
           return (
             <div className="skill-section" key={uuidv4()}>

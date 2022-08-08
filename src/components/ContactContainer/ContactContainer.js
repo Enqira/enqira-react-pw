@@ -10,12 +10,12 @@ export default function ContactContainer({
   setContactStyle,
   contactRef,
 }) {
-  const [alertOpacity, setAlertOpacity] = useState(0);
+  const [alertStyle, setAlertStyle] = useState({visibility: "hidden", opacity: "0"});
 
   //   when the popup close button clicked from popup
   const handleCloseClicked = () => {
     setContactStyle("none");
-    setAlertOpacity(0);
+    setAlertStyle({visibility: "hidden", opacity: "0"});
   };
 
   const {
@@ -44,7 +44,7 @@ export default function ContactContainer({
       );
     //   reset email input fields
     e.target.reset();
-    setAlertOpacity(1);
+    setAlertStyle({visibility: "visible", opacity: "1"});
   }
   return (
     <div
@@ -105,7 +105,7 @@ export default function ContactContainer({
           </div>
         </div>
       </div>
-      <div className="alert" style={{ opacity: alertOpacity }}>
+      <div className="alert" style={alertStyle}>
         Thank you for your message!
         <br /> I will get back to you as soon as possible.
         <button className="close-btn" onClick={handleCloseClicked}>
