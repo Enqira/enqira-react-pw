@@ -75,9 +75,9 @@ export default function SingleProject({ project }) {
       </div>
       <p>{description}</p>
       <div className="rep-web-links-container">
-        <a href={repository} target="_blank" rel="noreferrer">
+        {repository && <a href={repository} target="_blank" rel="noreferrer">
           <TechComponent arr={["Repository"]} />
-        </a>
+        </a>}
         <a href={repository2} target="_blank" rel="noreferrer">
           {secondRep}
         </a>

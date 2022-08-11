@@ -23,11 +23,7 @@ export default function JobExperienceComponent() {
         <TwoLines title={"Aarhus University"} />
         <div>
         </div>
-        {/* <p>
-            {`Freelance job developing new features for a mock social media website tool to be used for the ERC-funded research project STANDBY, “Standing by: Pro-social Bystander Reactions to Online Political Research”.
-            The tool is buit with: NodeJS, ReactJS, Mysql, Redux, Sequelize…
-            Current contract will terminate at the end of this year 2021.`}
-          </p> */}
+
         <h4>Freelancer Full Stack Developer</h4>
         <p>Project: Mock Social Media Website Tool</p>
 
@@ -46,7 +42,7 @@ export default function JobExperienceComponent() {
         </ul>
         <TwoLines title={"HeyWay.com"} />
         <div>
-          <p>
+          <div>
             Part time full stack developer.
             <p>Responsibilities: </p>
             <ul>
@@ -55,7 +51,7 @@ export default function JobExperienceComponent() {
               <li>Integrate and automate operations.</li>
               <li>Create a new theory test web application for students with ReactJS.</li>
             </ul>
-          </p>
+          </div>
         </div>
 
       </div>

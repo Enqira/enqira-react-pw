@@ -16,8 +16,11 @@ import adobeLogo from "../../images/others/adobe.png";
 import swaggerLogo from "../../images/others/swagger.png";
 import gitLogo from "../../images/others/git.png";
 import sequelizeLogo from "../../images/backend/sequelize.png";
+import NetLogo from "../../images/backend/NET.png";
+import CsharpLogo from "../../images/backend/c-sharp.png";
 import reduxLogo from "../../images/frontend/redux.png";
 import webflowLogo from "../../images/others/webflow.png";
+import StrapiLogo from "../../images/backend/strapi-logo.svg";
 
 const particlesConfig = {
   fullScreen: { enable: true, zIndex: 1 },
@@ -69,6 +72,21 @@ const particlesConfig = {
         weight: "400",
       },
       image: [
+        {
+          src: StrapiLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: CsharpLogo,
+          width: 32,
+          height: 32,
+        },
+        {
+          src: NetLogo,
+          width: 32,
+          height: 32,
+        },
         {
           src: webflowLogo,
           width: 32,

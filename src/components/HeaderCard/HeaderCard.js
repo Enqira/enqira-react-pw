@@ -12,7 +12,7 @@ export default function HeaderCard({
   contactRef
 }) {
   const [cardStyle, setCardStyle] = useState()
-  const [browser, setBrowser] = useState(false)
+  const [browser] = useState(false)
   const containerRef = useRef()
   const picBackRef = useRef()
   const btnRef = useRef()
@@ -60,7 +60,6 @@ export default function HeaderCard({
       picRef.current.style.transform = "translateZ(100px)"
       titleRef.current.style.transform = "translateZ(100px)"
       descriptionRef.current.style.transform = "translateZ(50px)"
-      console.log(browser)
       if (isBrowser) {
         btnRef.current.style.transform = "translateZ(120px)"
         downloadRef.current.style.transform = "translateZ(70px)"
@@ -106,7 +105,7 @@ export default function HeaderCard({
     containerRef.current.removeEventListener("mousemove", () => { })
     containerRef.current.removeEventListener("mouseleave", () => { })
     containerRef.current.removeEventListener("mouseenter", () => { })
-  }, [navigator.userAgent])
+  }, [browser])
 
   return (
     <div className="header-container" ref={containerRef}>

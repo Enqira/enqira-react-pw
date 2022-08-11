@@ -32,8 +32,16 @@ import danishLogo from "../../images/flags/danish.png";
 import englishLogo from "../../images/flags/english.png";
 import catalanLogo from "../../images/flags/catalan.png";
 
+import NETLogo from "../../images/backend/NET.png";
+import CSharpLogo from "../../images/backend/c-sharp.png";
+import StrapiLogo from "../../images/backend/strapi-logo.svg";
+
+
 const data = [
-  { name: "ReactJS", path: reactLogo },
+  {
+    name: "ReactJS",
+    path: reactLogo
+  },
   {
     name: "HTML",
     path: htmlLogo,
@@ -121,6 +129,18 @@ const data = [
   {
     name: "Swagger",
     path: swaggerLogo,
+  },
+  {
+    name: ".NET",
+    path: NETLogo,
+  },
+  {
+    name: "C-sharp",
+    path: CSharpLogo,
+  },
+  {
+    name: "Strapi",
+    path: StrapiLogo,
   },
   {
     name: "HackYourFuture.dk",

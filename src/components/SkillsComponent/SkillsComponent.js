@@ -27,6 +27,9 @@ const arr = [
       "elasticsearch",
       "Sequelize",
       "Docker",
+      "C-sharp",
+      ".NET",
+      "Strapi"
     ],
   },
   {

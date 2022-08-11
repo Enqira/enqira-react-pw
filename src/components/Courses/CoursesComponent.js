@@ -28,6 +28,13 @@ export default function CoursesComponent() {
           </div>
         </div>
         <div>
+          <TwoLines title={".NET/C# Masterclass"} />
+          <p>
+            8 weeks .NET/C# Masterclass in collaboration with Visma.
+          </p>
+
+        </div>
+        <div>
           <TwoLines title={"Elasticsearch Bootcamp"} />
           <p>
             Successfully completed Elasticsearch bootcamp during which we

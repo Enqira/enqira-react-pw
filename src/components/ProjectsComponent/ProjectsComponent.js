@@ -5,12 +5,35 @@ import SingleProject from "../SingleProject/SingleProject.js";
 import invitaImg from "../../images/projects/invita-screen1.png";
 import invita2Img from "../../images/projects/invita-screen2.png";
 import cloudpackImg from "../../images/projects/cloudpack-1.png";
-import cloudpack2Img from "../../images/projects/cloudpack-2.png";
 import guideIT1 from "../../images/projects/guide-it-1.png";
 import guideIT2 from "../../images/projects/guide-it-2.png";
 import videoThumbnail from "../../images/projects/video-tha.jpg";
+import Derassi1 from "../../images/projects/derassi.png";
+import Derassi2 from "../../images/projects/derassi2.png";
+
 
 const arr = [
+  {
+    name: "Derassiabogados.es",
+    hasVideo: false,
+    image: Derassi1,
+    image2: Derassi2,
+    description:
+      "A lawyer website for a family member with CMS for news and services.",
+    skills: [
+      "MySQL",
+      "ReactJS",
+      "NodeJS",
+      "strapi",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Figma",
+      "Adobe Suite"
+    ],
+    repository: null,
+    website: "https://derassiabogados.es/",
+  },
   {
     name: "Cloudpack",
     hasVideo: true,
