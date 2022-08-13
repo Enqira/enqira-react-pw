@@ -24,10 +24,9 @@ const arr = [
       "MySQL",
       "ReactJS",
       "NodeJS",
-      "strapi",
+      "Strapi",
       "HTML",
       "CSS",
-      "Javascript",
       "Figma",
       "Adobe Suite"
     ],
@@ -92,7 +91,7 @@ export default function ProjectsComponent() {
       <div className="projects-card card">
         <h3>Projects</h3>
         <p className="projects-warning">
-          Note: The porpuse of these projects was to put in practice what I was
+          Note: The purpose of these projects was to put in practice what I was
           learning, and I have improved my coding skills since then!
         </p>
         {arr.map((project) => {
